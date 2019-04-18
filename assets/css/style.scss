@@ -1,8 +1,18 @@
-/* ************************** VARIABLES ************************** */
+/* ****** VARIABLES ****** */
 $bleu: #4bcaff;
 $gris: #515f67;
 
+/* ****** POLICES ****** */
+@font-face {
+    font-family: 'Segoe';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Segoe UI.woff') format('woff');
+    src: url('assets/fonts/segoe-ui.ttf') format('ttf');
+}
+
 * {
+    font-family: 'Segoe''impact';
     margin: 0;
     padding: 0;
 }
@@ -12,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-/* ****** POLICES ****** */
+
 
 body {
 
@@ -29,7 +39,7 @@ body {
         #navbar {
             height: 150px;
             background-color: rgba(62, 73, 80, 0.8);
-            position: fixed;
+            // position: fixed;
 
             #logo {
                 color: white;
@@ -59,14 +69,32 @@ body {
             }
         }
 
+        /* *** Section HERO *** */
         #section_hero {
             #title {
                 text-align: center;
-                padding: 400px 0 250px 0;
+                padding: 250px 0 250px 0; //400px navbar position fixed
 
-                h1 {
-                    color: white;
-                    background-color: rgba(62, 73, 80, 0.8);
+                .haut {
+                    padding: 0% 22% 0% 22%;
+
+                    h1 {
+                        font-weight: lighter;
+                        color: white;
+                        background-color: rgba(62, 73, 80, 0.8);
+                        padding: 1% 0% 1% 0%;
+                    }
+                }
+
+                .bas {
+                    padding: 0% 10% 0% 10%;
+
+                    h1 {
+                        font-weight: lighter;
+                        color: white;
+                        background-color: rgba(62, 73, 80, 0.8);
+                        padding: 1% 0% 1% 0%;
+                    }
                 }
             }
         }
@@ -74,21 +102,114 @@ body {
 
     /* *************** MAIN ****************** */
     main {
+
+        /* *** Section SERVICES *** */
         #services {
             background-color: $bleu;
+            color: white;
 
             .container {
+                padding: 80px 0 80px 0;
+
                 .row {
-                    .titre{}
+                    .titre {
+                        h2 {
+                            font-weight: lighter;
+                            font-size: 30px;
+                            // border-bottom: 2px white solid;
+                        }
+
+                        .bordure {
+                            border-top: 2px white solid;
+                            margin-right: 96%;
+                            margin-top: -4px;
+                        }
+
+                    }
                 }
-                .row{
-                    #column1{}
-                    #column2{}
-                    #column3{}
-                    #column4{}
+
+                .row {
+                    img {
+                        padding: 30px 0 20px 0;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
+
+        /* *** Section PORTFOLIO *** */
+        section {
+            #navbar_portfolio {
+                .container {
+                    padding: 80px 0 80px 0;
+
+                    .titre {
+                        h2 {
+                            color: $gris;
+                            font-weight: lighter;
+                            font-size: 30px;
+                        }
+
+                        .bordure {
+                            border-top: 2px #515f67 solid;
+                            margin-right: 71%;
+                            margin-left: 2%;
+                            margin-top: -12px;
+                        }
+                    }
+                }
+
+                #menu_portfolio {
+                    color: $gris;
+                    justify-content: flex-end;
+                    font-size: 14px;
+
+                    ul {
+                        li {
+                            font-weight: bold;
+                            padding-left: 27px;
+                        }
+                    }
+                }
+
+                a {
+                    color: $gris;
+                }
+
+            }
+
+            #portfolio {
+                .container {
+                    .row {
+                        div {
+                            height: auto;
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+        /* *** Section SECTION *** */
+        /* *** Section TWITTER *** */
+        /* *** Section WHO_IS *** */
+        /* *** Section TESTIMONIALS *** */
+        /* *** Section CONTACT *** */
 
     }
 

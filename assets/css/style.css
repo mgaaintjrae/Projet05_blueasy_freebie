@@ -1,5 +1,14 @@
-/* ************************** VARIABLES ************************** */
+/* ****** VARIABLES ****** */
+/* ****** POLICES ****** */
+@font-face {
+  font-family: "Segoe";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Segoe UI.woff") format("woff");
+  src: url("assets/fonts/segoe-ui.ttf") format("ttf");
+}
 * {
+  font-family: "Segoe" "impact";
   margin: 0;
   padding: 0;
 }
@@ -9,7 +18,6 @@ a {
   text-decoration: none;
 }
 
-/* ****** POLICES ****** */
 body {
   /* *************** HEADER ****************** */
   /* *************** MAIN ****************** */
@@ -20,11 +28,11 @@ body #hero {
   background: url("../images/background_hero.jpg") no-repeat fixed;
   background-size: cover;
   /* *** Barre de navigation *** */
+  /* *** Section HERO *** */
 }
 body #hero #navbar {
   height: 150px;
   background-color: rgba(62, 73, 80, 0.8);
-  position: fixed;
 }
 body #hero #navbar #logo {
   color: white;
@@ -47,14 +55,94 @@ body #hero #navbar a {
 }
 body #hero #section_hero #title {
   text-align: center;
-  padding: 400px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
-body #hero #section_hero #title h1 {
+body #hero #section_hero #title .haut {
+  padding: 0% 22% 0% 22%;
+}
+body #hero #section_hero #title .haut h1 {
+  font-weight: lighter;
   color: white;
   background-color: rgba(62, 73, 80, 0.8);
+  padding: 1% 0% 1% 0%;
+}
+body #hero #section_hero #title .bas {
+  padding: 0% 10% 0% 10%;
+}
+body #hero #section_hero #title .bas h1 {
+  font-weight: lighter;
+  color: white;
+  background-color: rgba(62, 73, 80, 0.8);
+  padding: 1% 0% 1% 0%;
+}
+body main {
+  /* *** Section SERVICES *** */
+  /* *** Section PORTFOLIO *** */
+  /* *** Section SECTION *** */
+  /* *** Section TWITTER *** */
+  /* *** Section WHO_IS *** */
+  /* *** Section TESTIMONIALS *** */
+  /* *** Section CONTACT *** */
 }
 body main #services {
   background-color: #4bcaff;
+  color: white;
+}
+body main #services .container {
+  padding: 80px 0 80px 0;
+}
+body main #services .container .row .titre h2 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+body main #services .container .row .titre .bordure {
+  border-top: 2px white solid;
+  margin-right: 96%;
+  margin-top: -4px;
+}
+body main #services .container .row img {
+  padding: 30px 0 20px 0;
+}
+body main #services .container .row h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+body main #services .container .row p {
+  font-size: 12px;
+}
+body main section #navbar_portfolio .container {
+  padding: 80px 0 80px 0;
+}
+body main section #navbar_portfolio .container .titre h2 {
+  color: #515f67;
+  font-weight: lighter;
+  font-size: 30px;
+}
+body main section #navbar_portfolio .container .titre .bordure {
+  border-top: 2px #515f67 solid;
+  margin-right: 71%;
+  margin-left: 2%;
+  margin-top: -12px;
+}
+body main section #navbar_portfolio #menu_portfolio {
+  color: #515f67;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+body main section #navbar_portfolio #menu_portfolio ul li {
+  font-weight: bold;
+  padding-left: 27px;
+}
+body main section #navbar_portfolio a {
+  color: #515f67;
+}
+body main section #portfolio .container .row div {
+  height: auto;
+}
+body main section #portfolio .container .row div img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
