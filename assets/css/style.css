@@ -1,14 +1,6 @@
 /* ****** VARIABLES ****** */
-/* ****** POLICES ****** */
-@font-face {
-  font-family: "Segoe";
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/Segoe UI.woff") format("woff");
-  src: url("assets/fonts/segoe-ui.ttf") format("ttf");
-}
 * {
-  font-family: "Segoe" "impact";
+  font-family: "Segoe UI Symbol" "impact";
   margin: 0;
   padding: 0;
 }
@@ -21,6 +13,10 @@ a {
 body {
   /* *************** HEADER ****************** */
   /* *************** MAIN ****************** */
+  /* *** Section TWITTER *** */
+  /* *** Section WHO_IS *** */
+  /* *** Section TESTIMONIALS *** */
+  /* *** Section CONTACT *** */
 }
 body #hero {
   width: 100vw;
@@ -79,10 +75,6 @@ body main {
   /* *** Section SERVICES *** */
   /* *** Section PORTFOLIO *** */
   /* *** Section SECTION *** */
-  /* *** Section TWITTER *** */
-  /* *** Section WHO_IS *** */
-  /* *** Section TESTIMONIALS *** */
-  /* *** Section CONTACT *** */
 }
 body main #services {
   background-color: #4bcaff;
@@ -137,12 +129,43 @@ body main section #navbar_portfolio #menu_portfolio ul li {
 body main section #navbar_portfolio a {
   color: #515f67;
 }
-body main section #portfolio .container .row div {
-  height: auto;
+body main section #portfolio .container {
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+}
+body main section #portfolio .container .row {
+  padding-bottom: 30px;
 }
 body main section #portfolio .container .row div img {
-  max-width: 100%;
-  max-height: 100%;
+  height: 270px;
+  width: 270px;
+}
+body main #section .container .row .column1 h2 {
+  font-size: 30px;
+  color: #515f67;
+  font-weight: lighter;
+}
+body main #section .container .row .column1 p {
+  font-size: 14px;
+}
+body main #section .container .row .column1 button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
