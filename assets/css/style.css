@@ -14,9 +14,6 @@ body {
   /* *************** HEADER ****************** */
   /* *************** MAIN ****************** */
   /* *** Section TWITTER *** */
-  /* *** Section WHO_IS *** */
-  /* *** Section TESTIMONIALS *** */
-  /* *** Section CONTACT *** */
 }
 body #hero {
   width: 100vw;
@@ -51,7 +48,7 @@ body #hero #navbar a {
 }
 body #hero #section_hero #title {
   text-align: center;
-  padding: 250px 0 250px 0;
+  padding: 250px 0;
 }
 body #hero #section_hero #title .haut {
   padding: 0% 22% 0% 22%;
@@ -81,7 +78,7 @@ body main #services {
   color: white;
 }
 body main #services .container {
-  padding: 80px 0 80px 0;
+  padding: 80px 0;
 }
 body main #services .container .row .titre h2 {
   font-weight: lighter;
@@ -104,7 +101,7 @@ body main #services .container .row p {
   font-size: 12px;
 }
 body main section #navbar_portfolio .container {
-  padding: 80px 0 80px 0;
+  padding: 80px 0;
 }
 body main section #navbar_portfolio .container .titre h2 {
   color: #515f67;
@@ -141,12 +138,22 @@ body main section #portfolio .container .row div img {
   height: 270px;
   width: 270px;
 }
+body main #section {
+  background-color: #515f67;
+}
+body main #section .container .row .column1 {
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 body main #section .container .row .column1 h2 {
   font-size: 30px;
-  color: #515f67;
+  color: white;
   font-weight: lighter;
 }
 body main #section .container .row .column1 p {
+  color: white;
   font-size: 14px;
 }
 body main #section .container .row .column1 button {
@@ -167,5 +174,35 @@ body main #section .container .row .column1 button {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+body main #section .container .row .video {
+  padding: 80px 0;
+}
+body #twitter {
+  background-color: #4bcaff;
+}
+body #twitter .container {
+  padding: 75px 0;
+}
+body #twitter .container .row .icon {
+  display: flex;
+  justify-content: space-between;
+}
+body #twitter .container .row .icon h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: lighter;
+}
+body #twitter .container .row .icon i {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body #twitter .text p {
+  color: white;
+}
+
+/* *** Section WHO_IS *** */
+/* *** Section TESTIMONIALS *** */
+/* *** Section CONTACT *** */
 
 /*# sourceMappingURL=style.css.map */

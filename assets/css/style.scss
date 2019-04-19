@@ -66,7 +66,7 @@ body {
         #section_hero {
             #title {
                 text-align: center;
-                padding: 250px 0 250px 0; //400px navbar position fixed
+                padding: 250px 0; //400px navbar position fixed
 
                 .haut {
                     padding: 0% 22% 0% 22%;
@@ -102,7 +102,7 @@ body {
             color: white;
 
             .container {
-                padding: 80px 0 80px 0;
+                padding: 80px 0;
 
                 .row {
                     .titre {
@@ -141,9 +141,10 @@ body {
 
         /* *** Section PORTFOLIO *** */
         section {
+
             #navbar_portfolio {
                 .container {
-                    padding: 80px 0 80px 0;
+                    padding: 80px 0;
 
                     .titre {
                         h2 {
@@ -204,16 +205,26 @@ body {
 
         /* *** Section SECTION *** */
         #section {
+            background-color: $gris;
+
             .container {
+
                 .row {
                     .column1 {
+                        padding: 75px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
                         h2 {
+
                             font-size: 30px;
-                            color: $gris;
+                            color: white;
                             font-weight: lighter;
                         }
 
                         p {
+                            color: white;
                             font-size: 14px;
                         }
 
@@ -235,7 +246,10 @@ body {
                             border-radius: 0.25rem;
                             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
                         }
+                    }
 
+                    .video {
+                        padding: 80px 0;
                     }
                 }
             }
@@ -243,8 +257,48 @@ body {
     }
 
     /* *** Section TWITTER *** */
-    /* *** Section WHO_IS *** */
-    /* *** Section TESTIMONIALS *** */
-    /* *** Section CONTACT *** */
+    #twitter {
+        background-color: $bleu;
 
+        .container {
+            padding: 75px 0;
+
+            .row {
+                .icon {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 30px;
+                        color: white;
+                        font-weight: lighter;
+                    }
+
+                    i {
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .row{
+                
+            }
+
+
+
+
+        }
+
+        .text {
+            p {
+                color: white;
+            }
+        }
+    }
 }
+
+/* *** Section WHO_IS *** */
+/* *** Section TESTIMONIALS *** */
+/* *** Section CONTACT *** */
