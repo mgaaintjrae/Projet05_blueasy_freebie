@@ -28,6 +28,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* ****** STYLES GENERALS ****** */
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +45,7 @@ body {
   /* *************** FOOTER ****************** */
 }
 body #hero {
-  width: 100vw;
+  width: 100%;
   height: 800px;
   background: url("../images/background_hero.jpg") no-repeat fixed;
   background-size: cover;
@@ -73,6 +74,9 @@ body #hero #navbar #navbarNav ul li {
   font-family: "Segoe UI Bold";
   font-weight: bold;
   padding-left: 27px;
+}
+body #hero #navbar #navbarNav ul a:hover {
+  color: #4bcaff;
 }
 body #hero #navbar a {
   color: white;
@@ -236,6 +240,7 @@ body main #section .container .row .titre button {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 body main #section .container .row .video {
+  max-width: 560px;
   padding: 80px 0;
 }
 body main #twitter {
@@ -279,7 +284,7 @@ body main #twitter .container .text2 span {
   font-family: "Segoe UI Bold";
 }
 body main #who_is {
-  width: 100vw;
+  width: 100%;
   height: 500px;
   background: url("../images/background_photographe.jpg") no-repeat fixed;
   background-size: cover;
@@ -378,6 +383,8 @@ body main #testimonials .container .row .author p {
   color: #4bcaff;
 }
 body main #contact {
+  width: 100%;
+  height: 815px;
   background: url("../images/background_contact.jpg") no-repeat fixed;
   background-size: cover;
 }
@@ -405,15 +412,47 @@ body footer {
   height: 170px;
   background-color: #353f46;
 }
-body footer .menu .row .liste #menu_footer ul {
-  list-style-type: none;
+body footer .menu {
+  padding: 80px 0;
 }
-body footer .menu .row .liste #menu_footer ul li {
+body footer .menu .container .row .menu_footer {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+body footer .menu .container .row .menu_footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .menu .container .row .menu_footer ul .home {
+  padding-left: 0;
+}
+body footer .menu .container .row .menu_footer ul li {
   font-family: "Segoe UI Semibold";
   font-size: 12px;
   color: #515f67;
+  border-right: 1px #515f67 solid;
+  height: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 19px;
 }
-body footer .menu .row .liste #annee p {
+body footer .menu .container .row .menu_footer ul li a {
+  text-decoration: none;
+}
+body footer .menu .container .row .menu_footer ul li a:hover {
+  color: white;
+}
+body footer .menu .container .row .menu_footer ul .contact {
+  padding-right: 0;
+  border-right: none;
+}
+body footer .menu .container .row .annee {
+  padding-right: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+body footer .menu .container .row .annee p {
   font-family: "Segoe UI Semibold";
   font-size: 12px;
   color: #515f67;
