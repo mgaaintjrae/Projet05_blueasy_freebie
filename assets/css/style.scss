@@ -53,7 +53,7 @@ $grisFonce: #353f46;
     font-style: normal;
 }
 
-/* ****** STYLES GENERALS ****** */
+/* ****** GENERAL ****** */
 * {
     margin: 0;
     padding: 0;
@@ -99,25 +99,27 @@ body {
                 justify-content: flex-end;
                 font-size: 14px;
 
-
                 ul {
                     li {
                         font-family: 'Segoe UI Bold';
                         padding-left: 27px;
 
-
                     }
                 }
-            }
 
-            a {
-                color: white;
-            }
+                a {
+                    color: white;
+                }
 
-            a:hover {
-                color: $bleu;
-                border: 2px $bleu solid;
-                // transition: border 0.5s;
+                a:hover {
+                    color: $bleu;
+                    border: 2px $bleu solid;
+
+                    // transition: border 0.5s;
+                    @media screen and(max-width: 768px) {
+                        border: none;
+                    }
+                }
             }
         }
 
@@ -181,33 +183,33 @@ body {
                             font-family: 'Segoe UI Light';
                             font-weight: lighter;
                             font-size: 30px;
-                            // border-bottom: 2px white solid;
                         }
 
                         .bordure {
                             border-top: 3px white solid;
-                            margin-right: 96%;
+                            margin-right: 94%;
                             margin-top: -4px;
                         }
-
                     }
                 }
 
                 .row {
-                    img {
-                        padding: 30px 0 20px 0;
-                    }
+                    .col-3 {
+                        img {
+                            padding: 30px 0 20px 0;
+                        }
 
-                    h3 {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 24px;
-                        font-weight: 500;
-                        padding-bottom: 5px;
-                    }
+                        h3 {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 24px;
+                            font-weight: 500;
+                            padding-bottom: 5px;
+                        }
 
-                    p {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 12px;
+                        p {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -263,19 +265,50 @@ body {
             #portfolio {
                 .container {
                     padding-bottom: 80px;
-                    padding-left: 0;
+                    // padding-left: 0;
                     padding-right: 0;
 
-
-                    .row {
+                    .ligne1 {
+                        display: flex;
+                        justify-content: space-between;
                         padding-bottom: 30px;
+                        // padding-right: 30px;
+
+                        @media screen and(max-width: 768px) {
+                            padding-right: 30px;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        div {
+                            img {
+                                padding-right: 0;                           
+                                height: 270px;
+                                width: 270px;
+
+                            }
+                        }
+                    }
+
+                    .ligne2 {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 30px;
+                        // padding-right: 30px;
+
+                        @media screen and(max-width: 768px) {
+                            padding-right: 30px;
+                            display: flex;
+                            justify-content: center;
+                        }
+
 
                         div {
                             img {
                                 height: 270px;
                                 width: 270px;
-                            }
 
+                            }
                         }
                     }
                 }
@@ -285,6 +318,7 @@ body {
         /* *** Section SECTION *** */
         #section {
             background-color: $gris;
+
             .container {
 
                 .row {
@@ -302,13 +336,12 @@ body {
                         }
 
                         .bordure {
+                            width: 45px;
                             border-top: 3px white solid;
-                            margin-right: 92%;
-                            margin-top: -35px;
                         }
 
                         p {
-                            margin-bottom: -8px;
+                            padding-top: 34px;
                             padding-right: 19%;
                             font-family: 'Segoe UI';
                             color: white;
@@ -342,6 +375,10 @@ body {
                     .video {
                         max-width: 560px;
                         padding: 80px 0;
+
+                        @media screen and(max-width: 992px) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -410,7 +447,7 @@ body {
 
         /* *** Section WHO_IS *** */
         #who_is {
-            width: 100%;            
+            width: 100%;
             background: url("../images/background_photographe.jpg") no-repeat fixed;
             background-size: cover;
             background-position: center;
@@ -421,11 +458,13 @@ body {
                 .row {
                     .titre {
                         margin-bottom: 0;
+
                         h2 {
                             font-family: 'Segoe UI Light';
                             font-size: 30px;
                             color: white;
                         }
+
                         .bordure {
                             border-top: 3px white solid;
                             width: 17%;
@@ -435,6 +474,7 @@ body {
 
                 .row {
                     padding-top: 30px;
+
                     .text {
                         p {
                             font-size: 14px;
