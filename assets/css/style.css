@@ -72,14 +72,14 @@ body #hero #navbar #navbarNav {
 }
 body #hero #navbar #navbarNav ul li {
   font-family: "Segoe UI Bold";
-  font-weight: bold;
   padding-left: 27px;
-}
-body #hero #navbar #navbarNav ul a:hover {
-  color: #4bcaff;
 }
 body #hero #navbar a {
   color: white;
+}
+body #hero #navbar a:hover {
+  color: #4bcaff;
+  border: 2px #4bcaff solid;
 }
 body #hero #section_hero #title {
   text-align: center;
@@ -180,6 +180,10 @@ body main section #navbar_portfolio #menu_portfolio ul li {
 body main section #navbar_portfolio a {
   color: #515f67;
 }
+body main section #navbar_portfolio a:hover {
+  border: 2px #4bcaff solid;
+  color: #4bcaff;
+}
 body main section #portfolio .container {
   padding-bottom: 80px;
   padding-left: 0;
@@ -250,8 +254,6 @@ body main #twitter .container {
   padding: 75px 0;
 }
 body main #twitter .container .titre .icon {
-  padding-right: 0;
-  padding-left: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -285,7 +287,6 @@ body main #twitter .container .text2 span {
 }
 body main #who_is {
   width: 100%;
-  height: 500px;
   background: url("../images/background_photographe.jpg") no-repeat fixed;
   background-size: cover;
   background-position: center;
@@ -293,13 +294,20 @@ body main #who_is {
 body main #who_is .container {
   padding: 100px 0 170px 0;
 }
+body main #who_is .container .row .titre {
+  margin-bottom: 0;
+}
 body main #who_is .container .row .titre h2 {
   font-family: "Segoe UI Light";
   font-size: 30px;
   color: white;
 }
-body main #who_is .container .row .bordure {
-  border-top: 2px white solid;
+body main #who_is .container .row .titre .bordure {
+  border-top: 3px white solid;
+  width: 17%;
+}
+body main #who_is .container .row {
+  padding-top: 30px;
 }
 body main #who_is .container .row .text p {
   font-size: 14px;
@@ -308,8 +316,7 @@ body main #who_is .container .row .text p {
 body main #who_is .container .row .text_icons {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 27px;
+  justify-content: space-between;
 }
 body main #who_is .container .row .text_icons p {
   font-size: 14px;
@@ -384,16 +391,60 @@ body main #testimonials .container .row .author p {
 }
 body main #contact {
   width: 100%;
-  height: 815px;
   background: url("../images/background_contact.jpg") no-repeat fixed;
   background-size: cover;
 }
 body main #contact .container {
   padding: 80px 0;
 }
+body main #contact .container .row .titre {
+  margin-bottom: 0;
+}
 body main #contact .container .row .titre h2 {
   font-family: "Segoe UI Light";
   color: white;
+  font-size: 30px;
+}
+body main #contact .container .row .titre .bordure {
+  border-bottom: 2px white solid;
+  width: 4%;
+}
+body main #contact .container .row {
+  padding-top: 30px;
+}
+body main #contact .container .row .form form .fullname label {
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .form form .fullname #inputFullname {
+  height: 60px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 2px solid white;
+}
+body main #contact .container .row .form form .email label {
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .form form .email #inputMail {
+  height: 60px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 2px solid white;
+}
+body main #contact .container .row .text {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body main #contact .container .row .text p {
   font-family: "Segoe UI Semibold";
@@ -402,11 +453,44 @@ body main #contact .container .row .text p {
 }
 body main #contact .container .row .text ul {
   list-style-type: none;
+  margin-bottom: 0;
 }
 body main #contact .container .row .text ul li {
   font-family: "Segoe UI";
   font-size: 14px;
   color: white;
+}
+body main #contact .container .row .form form .message label {
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .form form .message #inputMessage {
+  height: 220px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 2px solid white;
+}
+body main #contact .container .row .submit form button {
+  width: 100%;
+  height: 60px;
+  border-radius: inherit;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #4bcaff;
+  border: 2px solid #4bcaff;
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+body main #contact .container .row .submit form button:hover {
+  background-color: aquamarine;
 }
 body footer {
   height: 170px;
@@ -441,7 +525,7 @@ body footer .menu .container .row .menu_footer ul li a {
   text-decoration: none;
 }
 body footer .menu .container .row .menu_footer ul li a:hover {
-  color: white;
+  color: #1b1b1b;
 }
 body footer .menu .container .row .menu_footer ul .contact {
   padding-right: 0;

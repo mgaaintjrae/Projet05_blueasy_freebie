@@ -99,23 +99,25 @@ body {
                 justify-content: flex-end;
                 font-size: 14px;
 
+
                 ul {
                     li {
                         font-family: 'Segoe UI Bold';
-                        font-weight: bold;
                         padding-left: 27px;
-                    }
-                    
-                    a:hover{
-                        color: $bleu; 
-                                                                   
+
+
                     }
                 }
-                
             }
 
             a {
                 color: white;
+            }
+
+            a:hover {
+                color: $bleu;
+                border: 2px $bleu solid;
+                // transition: border 0.5s;
             }
         }
 
@@ -213,7 +215,6 @@ body {
 
         /* *** Section PORTFOLIO *** */
         section {
-
             #navbar_portfolio {
                 .container {
                     padding: 80px 0;
@@ -253,6 +254,10 @@ body {
                     color: $gris;
                 }
 
+                a:hover {
+                    border: 2px $bleu solid;
+                    color: $bleu;
+                }
             }
 
             #portfolio {
@@ -266,11 +271,11 @@ body {
                         padding-bottom: 30px;
 
                         div {
-
                             img {
                                 height: 270px;
                                 width: 270px;
                             }
+
                         }
                     }
                 }
@@ -280,7 +285,6 @@ body {
         /* *** Section SECTION *** */
         #section {
             background-color: $gris;
-
             .container {
 
                 .row {
@@ -352,8 +356,8 @@ body {
 
                 .titre {
                     .icon {
-                        padding-right: 0;
-                        padding-left: 0;
+                        // padding-right: 0;
+                        // padding-left: 0;
                         display: flex;
                         justify-content: space-between;
 
@@ -406,8 +410,7 @@ body {
 
         /* *** Section WHO_IS *** */
         #who_is {
-            width: 100%;
-            height: 500px;
+            width: 100%;            
             background: url("../images/background_photographe.jpg") no-repeat fixed;
             background-size: cover;
             background-position: center;
@@ -417,21 +420,21 @@ body {
 
                 .row {
                     .titre {
+                        margin-bottom: 0;
                         h2 {
                             font-family: 'Segoe UI Light';
                             font-size: 30px;
                             color: white;
                         }
+                        .bordure {
+                            border-top: 3px white solid;
+                            width: 17%;
+                        }
                     }
                 }
 
                 .row {
-                    .bordure {
-                        border-top: 2px white solid;
-                    }
-                }
-
-                .row {
+                    padding-top: 30px;
                     .text {
                         p {
                             font-size: 14px;
@@ -442,8 +445,7 @@ body {
                     .text_icons {
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-evenly;
-                        margin-top: 27px;
+                        justify-content: space-between;
 
                         p {
                             font-size: 14px;
@@ -556,7 +558,6 @@ body {
         /* *** Section CONTACT *** */
         #contact {
             width: 100%;
-            height: 815px;
             background: url("../images/background_contact.jpg") no-repeat fixed;
             background-size: cover;
 
@@ -565,33 +566,70 @@ body {
 
                 .row {
                     .titre {
+                        margin-bottom: 0;
+
                         h2 {
                             font-family: 'Segoe UI Light';
                             color: white;
+                            font-size: 30px;
                         }
 
-                        .bordure {}
+                        .bordure {
+                            border-bottom: 2px white solid;
+                            width: 4%;
+                        }
                     }
                 }
 
                 .row {
+                    padding-top: 30px;
+
                     .form {
                         form {
                             .fullname {
-                                label {}
+                                label {
+                                    font-family: 'Segoe UI Bold';
+                                    font-size: 14px;
+                                    color: white;
+                                }
 
-                                #inputFullname {}
+                                #inputFullname {
+                                    height: 60px;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 0;
+                                    background-color: transparent;
+                                    background-clip: padding-box;
+                                    border: 2px solid white;
+                                }
                             }
 
                             .email {
-                                label {}
+                                label {
+                                    font-family: 'Segoe UI Bold';
+                                    font-size: 14px;
+                                    color: white;
+                                }
 
-                                #inputMail {}
+                                #inputMail {
+                                    height: 60px;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 0;
+                                    background-color: transparent;
+                                    background-clip: padding-box;
+                                    border: 2px solid white;
+                                }
                             }
                         }
                     }
 
                     .text {
+                        padding-top: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
                         p {
                             font-family: 'Segoe UI Semibold';
                             font-size: 14px;
@@ -600,6 +638,7 @@ body {
 
                         ul {
                             list-style-type: none;
+                            margin-bottom: 0;
 
                             li {
                                 font-family: 'Segoe UI';
@@ -611,12 +650,50 @@ body {
                 }
 
                 .row {
-                    .submit {
+                    .form {
                         form {
                             .message {
-                                label {}
+                                label {
+                                    font-family: 'Segoe UI Bold';
+                                    font-size: 14px;
+                                    color: white;
+                                }
 
-                                #inputSubmit {}
+                                #inputMessage {
+                                    height: 220px;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 0;
+                                    background-color: transparent;
+                                    background-clip: padding-box;
+                                    border: 2px solid white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .row {
+                    .submit {
+                        form {
+                            button {
+                                width: 100%;
+                                height: 60px;
+                                border-radius: inherit;
+                                color: white;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                background-color: $bleu;
+                                border: 2px solid $bleu;
+                                font-family: 'Segoe UI Bold';
+                                font-size: 14px;
+                                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                            }
+
+                            button:hover {
+                                background-color: aquamarine;
                             }
                         }
                     }
@@ -632,19 +709,22 @@ body {
 
         .menu {
             padding: 80px 0;
-            .container{
+
+            .container {
                 .row {
                     .menu_footer {
                         padding-right: 0px;
                         padding-left: 0px;
+
                         ul {
                             list-style-type: none;
                             display: flex;
                             justify-content: space-between;
 
-                            .home{
+                            .home {
                                 padding-left: 0;
                             }
+
                             li {
                                 font-family: 'Segoe UI Semibold';
                                 font-size: 12px;
@@ -652,16 +732,19 @@ body {
                                 border-right: 1px #515f67 solid;
                                 height: 5px;
                                 padding-right: 20px;
-                                padding-left: 20px;                                
+                                padding-left: 20px;
                                 padding-bottom: 19px;
-                                a{
-                                    text-decoration: none;                                    
+
+                                a {
+                                    text-decoration: none;
                                 }
-                                a:hover{
-                                    color: white;
+
+                                a:hover {
+                                    color: rgb(27, 27, 27);
                                 }
                             }
-                            .contact{
+
+                            .contact {
                                 padding-right: 0;
                                 border-right: none;
                             }
@@ -672,6 +755,7 @@ body {
                         padding-right: 0px;
                         display: flex;
                         justify-content: flex-end;
+
                         p {
                             font-family: 'Segoe UI Semibold';
                             font-size: 12px;
