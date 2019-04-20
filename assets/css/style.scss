@@ -476,7 +476,7 @@ body {
                                         color: rgb(179, 41, 64);
                                     }
 
-                                    .coffe:hover {
+                                    .coffee:hover {
                                         color: black;
                                     }
                                 }
@@ -555,6 +555,8 @@ body {
             background-size: cover;
 
             .container {
+                padding: 80px 0;
+
                 .row {
                     .titre {
                         h2 {
@@ -613,9 +615,41 @@ body {
                         }
                     }
                 }
-
             }
         }
+    }
 
+    /* *************** FOOTER ****************** */
+    footer {
+        height: 170px;
+        background-color: $grisFonce;
+
+        .menu {
+            .row {
+                .liste {
+                    #menu_footer {
+                        ul {
+                            list-style-type: none;
+
+                            li {
+                                font-family: 'Segoe UI Semibold';
+                                font-size: 12px;
+                                color: $gris;
+                            }
+                        }
+                    }
+
+                    #annee {
+                        p {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 12px;
+                            color: $gris;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+// END

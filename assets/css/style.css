@@ -41,6 +41,7 @@ a {
 body {
   /* *************** HEADER ****************** */
   /* *************** MAIN ****************** */
+  /* *************** FOOTER ****************** */
 }
 body #hero {
   width: 100vw;
@@ -335,7 +336,7 @@ body main #who_is .container .row .text_icons ul li button .google:hover {
 body main #who_is .container .row .text_icons ul li button .dribbble:hover {
   color: #b32940;
 }
-body main #who_is .container .row .text_icons ul li button .coffe:hover {
+body main #who_is .container .row .text_icons ul li button .coffee:hover {
   color: black;
 }
 body main #who_is .container .row .text_icons ul li button:hover {
@@ -380,6 +381,9 @@ body main #contact {
   background: url("../images/background_contact.jpg") no-repeat fixed;
   background-size: cover;
 }
+body main #contact .container {
+  padding: 80px 0;
+}
 body main #contact .container .row .titre h2 {
   font-family: "Segoe UI Light";
   color: white;
@@ -396,6 +400,23 @@ body main #contact .container .row .text ul li {
   font-family: "Segoe UI";
   font-size: 14px;
   color: white;
+}
+body footer {
+  height: 170px;
+  background-color: #353f46;
+}
+body footer .menu .row .liste #menu_footer ul {
+  list-style-type: none;
+}
+body footer .menu .row .liste #menu_footer ul li {
+  font-family: "Segoe UI Semibold";
+  font-size: 12px;
+  color: #515f67;
+}
+body footer .menu .row .liste #annee p {
+  font-family: "Segoe UI Semibold";
+  font-size: 12px;
+  color: #515f67;
 }
 
 /*# sourceMappingURL=style.css.map */
