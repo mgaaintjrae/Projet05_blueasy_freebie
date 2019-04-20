@@ -97,7 +97,7 @@ body {
                 }
             }
 
-            #menu {
+            #navbarNav {
                 justify-content: flex-end;
                 font-size: 14px;
 
@@ -280,7 +280,7 @@ body {
             .container {
 
                 .row {
-                    .column1 {
+                    .titre {
                         padding: 75px 0;
                         display: flex;
                         flex-direction: column;
@@ -359,16 +359,18 @@ body {
                             color: white;
                         }
 
-                        .bordure {
-                            border-top: 2px #515f67 solid;
-
-                        }
-
                         i {
                             color: white;
                             display: flex;
                             align-items: center;
                         }
+                    }
+                }
+
+                .row {
+                    .bordure {
+                        border-top: 2px #515f67 solid;
+
                     }
                 }
 
@@ -405,16 +407,28 @@ body {
             background: url("../images/background_photographe.jpg") no-repeat fixed;
             background-size: cover;
             background-position: center;
+
             .container {
+                padding: 100px 0 170px 0;
+
                 .row {
-                    padding: 100px 0 170px 0;
-                    .text {
+                    .titre {
                         h2 {
                             font-family: 'Segoe UI Light';
                             font-size: 30px;
                             color: white;
                         }
+                    }
+                }
 
+                .row {
+                    .bordure {
+                        border-top: 2px white solid;
+                    }
+                }
+
+                .row {
+                    .text {
                         p {
                             font-size: 14px;
                             color: white;
@@ -422,6 +436,11 @@ body {
                     }
 
                     .text_icons {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        margin-top: 27px;
+
                         p {
                             font-size: 14px;
                             color: white;
@@ -431,18 +450,40 @@ body {
                             list-style-type: none;
                             display: flex;
                             justify-content: flex-start;
+
                             li {
                                 margin-right: 2%;
-                                button {                                   
+
+                                button {
+                                    border: 2px white solid;
                                     background-color: transparent;
                                     border-radius: inherit;
                                     border-color: white;
+
                                     i {
                                         color: white;
                                     }
+
+                                    .twitter:hover {
+                                        color: $bleu;
+                                    }
+
+                                    .google:hover {
+                                        color: red;
+                                    }
+
+                                    .dribbble:hover {
+                                        color: rgb(179, 41, 64);
+                                    }
+
+                                    .coffe:hover {
+                                        color: black;
+                                    }
                                 }
-                                button:hover{
-                                    color: $gris;
+
+                                button:hover {
+
+                                    background-color: $gris;
                                 }
 
                             }
@@ -453,7 +494,128 @@ body {
         }
 
         /* *** Section TESTIMONIALS *** */
+        #testimonials {
+            .container {
+                padding: 80px 0;
+
+                .row {
+                    .titre {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h2 {
+                            color: $gris;
+                            font-family: 'Segoe UI Light';
+                            font-size: 30px
+                        }
+
+                        .quote {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .row {
+                    margin-right: 0 !important;
+
+                    .bordure {
+                        width: 43px;
+                        border-top: 2px #353f46 solid;
+                        top: -5px;
+                        left: 16px;
+
+                    }
+                }
+
+                .row {
+                    .text {
+                        font-family: 'Segoe UI Light';
+                        color: $gris;
+                        font-size: 28px
+                    }
+                }
+
+                .row {
+                    .author {
+                        p {
+                            font-family: 'Segoe UI Bold';
+                            font-size: 14px;
+                            color: $bleu;
+                        }
+
+                    }
+                }
+            }
+        }
+
         /* *** Section CONTACT *** */
+        #contact {
+            background: url("../images/background_contact.jpg") no-repeat fixed;
+            background-size: cover;
+
+            .container {
+                .row {
+                    .titre {
+                        h2 {
+                            font-family: 'Segoe UI Light';
+                            color: white;
+                        }
+
+                        .bordure {}
+                    }
+                }
+
+                .row {
+                    .form {
+                        form {
+                            .fullname {
+                                label {}
+
+                                #inputFullname {}
+                            }
+
+                            .email {
+                                label {}
+
+                                #inputMail {}
+                            }
+                        }
+                    }
+
+                    .text {
+                        p {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 14px;
+                            color: white;
+                        }
+
+                        ul {
+                            list-style-type: none;
+
+                            li {
+                                font-family: 'Segoe UI';
+                                font-size: 14px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .row {
+                    .submit {
+                        form {
+                            .message {
+                                label {}
+
+                                #inputSubmit {}
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
 
     }
 }

@@ -64,11 +64,11 @@ body #hero #navbar #logo span {
   font-family: "Segoe UI Bold";
   color: #4bcaff;
 }
-body #hero #navbar #menu {
+body #hero #navbar #navbarNav {
   justify-content: flex-end;
   font-size: 14px;
 }
-body #hero #navbar #menu ul li {
+body #hero #navbar #navbarNav ul li {
   font-family: "Segoe UI Bold";
   font-weight: bold;
   padding-left: 27px;
@@ -190,31 +190,31 @@ body main section #portfolio .container .row div img {
 body main #section {
   background-color: #515f67;
 }
-body main #section .container .row .column1 {
+body main #section .container .row .titre {
   padding: 75px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-body main #section .container .row .column1 h2 {
+body main #section .container .row .titre h2 {
   font-family: "Segoe UI Light";
   font-size: 30px;
   color: white;
   font-weight: lighter;
 }
-body main #section .container .row .column1 .bordure {
+body main #section .container .row .titre .bordure {
   border-top: 3px white solid;
   margin-right: 92%;
   margin-top: -35px;
 }
-body main #section .container .row .column1 p {
+body main #section .container .row .titre p {
   margin-bottom: -8px;
   padding-right: 19%;
   font-family: "Segoe UI";
   color: white;
   font-size: 14px;
 }
-body main #section .container .row .column1 button {
+body main #section .container .row .titre button {
   margin-left: 0%;
   margin-right: 76%;
   border-radius: inherit;
@@ -254,13 +254,13 @@ body main #twitter .container .titre .icon h2 {
   font-size: 30px;
   color: white;
 }
-body main #twitter .container .titre .icon .bordure {
-  border-top: 2px #515f67 solid;
-}
 body main #twitter .container .titre .icon i {
   color: white;
   display: flex;
   align-items: center;
+}
+body main #twitter .container .row .bordure {
+  border-top: 2px #515f67 solid;
 }
 body main #twitter .container .text1 p {
   font-size: 28px;
@@ -284,17 +284,26 @@ body main #who_is {
   background-size: cover;
   background-position: center;
 }
-body main #who_is .container .row {
+body main #who_is .container {
   padding: 100px 0 170px 0;
 }
-body main #who_is .container .row .text h2 {
+body main #who_is .container .row .titre h2 {
   font-family: "Segoe UI Light";
   font-size: 30px;
   color: white;
 }
+body main #who_is .container .row .bordure {
+  border-top: 2px white solid;
+}
 body main #who_is .container .row .text p {
   font-size: 14px;
   color: white;
+}
+body main #who_is .container .row .text_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 27px;
 }
 body main #who_is .container .row .text_icons p {
   font-size: 14px;
@@ -309,6 +318,7 @@ body main #who_is .container .row .text_icons ul li {
   margin-right: 2%;
 }
 body main #who_is .container .row .text_icons ul li button {
+  border: 2px white solid;
   background-color: transparent;
   border-radius: inherit;
   border-color: white;
@@ -316,8 +326,76 @@ body main #who_is .container .row .text_icons ul li button {
 body main #who_is .container .row .text_icons ul li button i {
   color: white;
 }
+body main #who_is .container .row .text_icons ul li button .twitter:hover {
+  color: #4bcaff;
+}
+body main #who_is .container .row .text_icons ul li button .google:hover {
+  color: red;
+}
+body main #who_is .container .row .text_icons ul li button .dribbble:hover {
+  color: #b32940;
+}
+body main #who_is .container .row .text_icons ul li button .coffe:hover {
+  color: black;
+}
 body main #who_is .container .row .text_icons ul li button:hover {
+  background-color: #515f67;
+}
+body main #testimonials .container {
+  padding: 80px 0;
+}
+body main #testimonials .container .row .titre {
+  display: flex;
+  justify-content: space-between;
+}
+body main #testimonials .container .row .titre h2 {
   color: #515f67;
+  font-family: "Segoe UI Light";
+  font-size: 30px;
+}
+body main #testimonials .container .row .titre .quote {
+  display: flex;
+  align-items: center;
+}
+body main #testimonials .container .row {
+  margin-right: 0 !important;
+}
+body main #testimonials .container .row .bordure {
+  width: 43px;
+  border-top: 2px #353f46 solid;
+  top: -5px;
+  left: 16px;
+}
+body main #testimonials .container .row .text {
+  font-family: "Segoe UI Light";
+  color: #515f67;
+  font-size: 28px;
+}
+body main #testimonials .container .row .author p {
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  color: #4bcaff;
+}
+body main #contact {
+  background: url("../images/background_contact.jpg") no-repeat fixed;
+  background-size: cover;
+}
+body main #contact .container .row .titre h2 {
+  font-family: "Segoe UI Light";
+  color: white;
+}
+body main #contact .container .row .text p {
+  font-family: "Segoe UI Semibold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .text ul {
+  list-style-type: none;
+}
+body main #contact .container .row .text ul li {
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
