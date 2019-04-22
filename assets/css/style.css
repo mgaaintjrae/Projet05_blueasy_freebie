@@ -141,11 +141,11 @@ body main #services .container .row .titre h2 {
 }
 body main #services .container .row .titre .bordure {
   border-top: 3px white solid;
-  margin-right: 94%;
-  margin-top: -4px;
+  width: 5%;
+  margin-top: -5px;
 }
 body main #services .container .row .col-3 img {
-  padding: 30px 0 20px 0;
+  margin: 30px 0 20px 0;
 }
 body main #services .container .row .col-3 h3 {
   font-family: "Segoe UI Semibold";
@@ -181,6 +181,7 @@ body main section #navbar_portfolio #menu_portfolio ul li {
   font-family: "Segoe UI Bold";
   font-weight: bold;
   padding-left: 27px;
+  cursor: pointer;
 }
 body main section #navbar_portfolio a {
   color: #515f67;
@@ -191,43 +192,70 @@ body main section #navbar_portfolio a:hover {
 }
 body main section #portfolio .container {
   padding-bottom: 80px;
-  padding-right: 0;
 }
-body main section #portfolio .container .ligne1 {
+body main section #portfolio .container .row {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  body main section #portfolio .container .ligne1 {
-    padding-right: 30px;
-    display: flex;
-    justify-content: center;
-  }
+body main section #portfolio .container .row #panoramas {
+  padding-right: 20px;
 }
-body main section #portfolio .container .ligne1 div img {
-  padding-right: 0;
+body main section #portfolio .container .row #panoramas #autoroute {
   height: 270px;
   width: 270px;
+  padding-bottom: 20px;
 }
-body main section #portfolio .container .ligne2 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-@media screen and (max-width: 768px) {
-  body main section #portfolio .container .ligne2 {
-    padding-right: 30px;
-    display: flex;
-    justify-content: center;
-  }
-}
-body main section #portfolio .container .ligne2 div img {
+body main section #portfolio .container .row #panoramas #foret {
   height: 270px;
   width: 270px;
+  padding-bottom: 20px;
+}
+body main section #portfolio .container .row #portraits {
+  padding-right: 20px;
+}
+body main section #portfolio .container .row #portraits #pont {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
+}
+body main section #portfolio .container .row #portraits #surfer {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
+}
+body main section #portfolio .container .row #macro {
+  padding-right: 20px;
+}
+body main section #portfolio .container .row #macro #rochers {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
+}
+body main section #portfolio .container .row #macro #montagne {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  body main section #portfolio .container .row #journal {
+    padding-right: 20px;
+  }
+}
+body main section #portfolio .container .row #journal #arbre {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
+}
+body main section #portfolio .container .row #journal #neige {
+  height: 270px;
+  width: 270px;
+  padding-bottom: 20px;
 }
 body main #section {
   background-color: #515f67;
+}
+body main #section .container .row {
+  flex-wrap: inherit;
 }
 body main #section .container .row .titre {
   padding: 75px 0;
@@ -252,6 +280,19 @@ body main #section .container .row .titre p {
   color: white;
   font-size: 14px;
 }
+@media screen and (max-width: 992px) {
+  body main #section .container .row .titre p {
+    text-align: center;
+    padding-top: 10px;
+    padding-right: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body main #section .container .row .titre p {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
 body main #section .container .row .titre button {
   margin-left: 0%;
   margin-right: 76%;
@@ -271,6 +312,11 @@ body main #section .container .row .titre button {
   font-size: 14px;
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  body main #section .container .row .titre button {
+    margin: 0 40%;
+  }
 }
 body main #section .container .row .video {
   max-width: 560px;
@@ -296,10 +342,16 @@ body main #twitter .container .titre .icon h2 {
   font-size: 30px;
   color: white;
 }
-body main #twitter .container .titre .icon i {
-  color: white;
+body main #twitter .container .titre .icon a {
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+body main #twitter .container .titre .icon a i {
+  color: white;
+}
+body main #twitter .container .titre .icon :hover {
+  color: #515f67;
 }
 body main #twitter .container .row .bordure {
   border-top: 2px #515f67 solid;
@@ -446,12 +498,23 @@ body main #contact .container .row .titre .bordure {
 body main #contact .container .row {
   padding-top: 30px;
 }
-body main #contact .container .row .form form .fullname label {
+@media screen and (max-width: 992px) {
+  body main #contact .container .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  body main #contact .container .row .form {
+    width: 70%;
+  }
+}
+body main #contact .container .row .form #myForm .fullname label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .form form .fullname #inputFullname {
+body main #contact .container .row .form #myForm .fullname #fullname {
   height: 60px;
   display: block;
   width: 100%;
@@ -460,12 +523,12 @@ body main #contact .container .row .form form .fullname #inputFullname {
   background-clip: padding-box;
   border: 2px solid white;
 }
-body main #contact .container .row .form form .email label {
+body main #contact .container .row .form #myForm .email label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .form form .email #inputMail {
+body main #contact .container .row .form #myForm .email #email {
   height: 60px;
   display: block;
   width: 100%;
@@ -474,32 +537,37 @@ body main #contact .container .row .form form .email #inputMail {
   background-clip: padding-box;
   border: 2px solid white;
 }
-body main #contact .container .row .text {
+body main #contact .container .row .form #myForm .text {
   padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-body main #contact .container .row .text p {
+@media screen and (max-width: 992px) {
+  body main #contact .container .row .form #myForm .text {
+    display: none;
+  }
+}
+body main #contact .container .row .form #myForm .text p {
   font-family: "Segoe UI Semibold";
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .text ul {
+body main #contact .container .row .form #myForm .text ul {
   list-style-type: none;
   margin-bottom: 0;
 }
-body main #contact .container .row .text ul li {
+body main #contact .container .row .form #myForm .text ul li {
   font-family: "Segoe UI";
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .form form .message label {
+body main #contact .container .row .form #myForm .row .form .message label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .form form .message #inputMessage {
+body main #contact .container .row .form #myForm .row .form .message #message {
   height: 220px;
   display: block;
   width: 100%;
@@ -508,7 +576,7 @@ body main #contact .container .row .form form .message #inputMessage {
   background-clip: padding-box;
   border: 2px solid white;
 }
-body main #contact .container .row .submit form button {
+body main #contact .container .row .form #myForm .row .submit form button {
   width: 100%;
   height: 60px;
   border-radius: inherit;
@@ -518,13 +586,12 @@ body main #contact .container .row .submit form button {
   -ms-user-select: none;
   user-select: none;
   background-color: #4bcaff;
-  border: 2px solid #4bcaff;
   font-family: "Segoe UI Bold";
   font-size: 14px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-body main #contact .container .row .submit form button:hover {
-  background-color: aquamarine;
+body main #contact .container .row .form #myForm .row .submit form button:hover {
+  background-color: #548df7;
 }
 body footer {
   height: 170px;
