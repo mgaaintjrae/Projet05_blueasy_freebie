@@ -1,6 +1,7 @@
 /* ***************** Système de filtres sur images ***********************
  **********************     Section PORTFOLIO     *********************** */
 
+
 /* ******************* VARIABLES ******************** */
 var portfolio_panoramas = document.querySelector("#linkPanoramas");
 var portfolio_portraits = document.querySelector("#linkPortraits");
@@ -55,71 +56,67 @@ function clickAll() {
 
 /* ********************         Formulaire        *********************** */
 
-/* ******************* VARIABLES ******************** */
-/*
-var formulaire = document.querySelector("#envoyer");
 
-var fullname = document.querySelector("#fullName");
+  var formulaire = document.getElementById("formEnregistrer");
+  var regex;
 
-/* ******************* EVENEMENTS ******************** */
-/*
-formulaire.addEventListener("submit", verifFinale);
+
+  formulaire.addEventListener("submit", validation);
+
 
 // fullname.addEventListener("blur", verifFullName);
 
-/* ******************* FONCTIONS ******************** */
-/*
-function verifFullName() {
-  if (fullname.value.length < 3 || fullname.value.length > 50) {
-    console.log("problème largeur");
-  } else {
-    console.log("ok");
-  }
-}
 
+function validation(event) {
 
-// Envoi du formulaire true ou false
-function verifFinale(event) {
   event.preventDefault();
-  if (error["fullname"] == "ok" && error["email"] == "ok") {
-    console.log("envoi du message");
-  } else {
+
+  var error = document.getElementById("errorFormulaire");
+  var fullname = document.getElementById("fullname");
+  var email = document.getElementById("email");
+  var message = document.getElementById("message");
+  var errs = [];
+
+  if (fullname.value.length == 0) {
+    //alert("Le champ Full name est vide");
+
+    errs.push("Le champ Full name est obligatoire");
+  } else if (fullname.value.length < 3 || fullname.value.length > 50) {
+    //alert("problème largeur");
+    errs.push("Le champ Full name doit etre compris entre 3 et 50 caracteres");
+  }
+
+  if (email.value.length == 0) {
+    //alert("Le champ email est vide");
+    errs.push("Le champ email est obligatoire");
+  } else if (email.value.length < 3 || email.value.length > 50) {
+    //alert("problème largeur");
+    errs.push("Le champ email doit etre compris entre 3 et 50 caracteres");
+  }
+
+
+  if (message.value.length == 0) {
+    //alert("Le champ message est vide");
+    errs.push("Le champ message est obligatoire");
+  } else if (message.value.length < 3 || message.value.length > 250) {
+    //alert("problème largeur");
+    errs.push("Le champ message doit etre compris entre 3 et 250 caracteres");
+  }
+
+  if (errs.length > 0) {
     console.log("erreur");
-  }
-}*/
+    var html = "<div class='alert alert-danger' role='alert'>";
+    html = html + "<ul>";
+    errs.forEach(function (erreur, index, array) {
+      html = html + "<li>" + erreur + "</li>";
+    });
 
+    html = html + "<ul>";
+    //alert(html);
+    error.innerHTML = html;
 
-window.onload = function () {
-  /* *************** VARIABLES **************** */
-  var formulaire = document.querySelector("#envoyer");
-  /* *************** EVENEMENTS **************** */
-  formulaire.addEventListener("submit", verifFullName, false);
-}
+  } else {
+    error.innerHTML = "Ok";
 
-// fullname.addEventListener("blur", verifFullName);
-
-/* *************** FONCTIONS **************** */
-function verifFullName() {
-  console.log('lol');
-
-  var fullname = document.querySelector("#fullName");
-
-  if (fullname.value == "") alert("Le champ Nom est vide");
-  else if (fullname.value.length < 3 || fullname.value.length > 50) alert("problème largeur");
-  else alert("ok");
-
-}
-
-/*
-var bouton1 = document.querySelector("#btn1");
-function envoiForm(event) {
-  if (this.elements.adresse.value === "") {
-    alert("L'adresse est vide.");
-    event.preventDefault();
   }
 }
-
-var formulaire = document.getElementById("coordonnees");
-formulaire.addEventListener("submit", envoiForm, false);
-
-*/

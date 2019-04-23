@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>John DOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Meta classique -->
     <meta name="author" content="Priscilla Roy">
     <meta name="description" content="John Doe, professional skier and a musician">
@@ -97,25 +98,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-12 col-lg-3">
                         <img src="assets/images/logo_coffee.png" width="34" height="48" alt="logo coffee blanc">
                         <h3>COFFEE</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-12 col-lg-3">
                         <img src="assets/images/logo_instant.png" width="48" height="48" alt="logo instant blanc">
                         <h3>INSTANT</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-12 col-lg-3">
                         <img src="assets/images/logo_serious.png" width="47" height="45" alt="logo serious blanc">
                         <h3>SERIOUS</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-12 col-md-12 col-lg-3">
                         <img src="assets/images/logo_frame.png" width="48" height="48" alt="logo frame blanc">
                         <h3>FRAME</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
@@ -240,16 +241,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="bordure col-1"></div>
+                    <div class="bordure"></div>
                 </div>
-                <div class="text1 row">
+                <div class="text row">
                     <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake</p>
-                </div>
-                <div class="text2 row">
+                
                     <p><span>@cheesecake</span> tootsie roll.</p>
                 </div>
-
-
             </div>
         </section>
 
@@ -257,12 +255,12 @@
         <section id="who_is" class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="titre col-3">
+                    <div class="titre col-12 col-3-lg">
                         <h2>WHO IS JOHN DOE</h2>
                         <div class="bordure"></div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="text_icons row">
                     <div class="text col-6">
                         <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi
                             bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer
@@ -271,7 +269,7 @@
                             Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I
                             love candy canes toffee.</p>
                     </div>
-                    <div class="text_icons col-6">
+                    <div class="icons col-6">
                         <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar
                             plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie
                             bear claw pastry.</p>
@@ -305,7 +303,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="bordure col-1"></div>
+                    <div class="bordure"></div>
                 </div>
                 <div class="row">
                     <div class="text col-12">
@@ -322,6 +320,7 @@
         </section>
 
         <!-- Section CONTACT -->
+        <div id="errorFormulaire"></div>
         <section id="contact" class="container-fluid">
             <div class="container">
                 <div class="row">
@@ -332,7 +331,7 @@
                 </div>
                 <div class="row">
                     <div class="form col-lg-5">
-                        <form id="myForm">
+                        <form role="form" method="post" id="formEnregistrer">
                             <div class="fullname">
                                 <label for="fullname">FULL NAME</label>
                                 <input type="text" class="form-control" id="fullname">
@@ -341,7 +340,7 @@
                             <div class="email">
                                 <label for="email">EMAIL</label>
                                 <input type="email" class="form-control" id="email">
-                            </div>                           
+                            </div>
                     </div>
                     <div class="text offset-lg-1 col-lg-6">
                         <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop
@@ -356,15 +355,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form col-12">                       
+                    <div class="form col-12">
                         <div class="message">
                             <label for="message">MESSAGE</label>
                             <input type="text" class="form-control" id="message">
-                        </div>                       
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="submit col-4">                       
+                    <div class="submit col-4">
                         <button type="button" class="btn btn-outline-secondary">MESSAGE</button>
                         </form>
                     </div>
