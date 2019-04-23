@@ -433,6 +433,8 @@ body #who_is .container .text_icons .icons ul {
 @media screen and (max-width: 768px) {
   body #who_is .container .text_icons .icons ul {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 body #who_is .container .text_icons .icons ul li {
