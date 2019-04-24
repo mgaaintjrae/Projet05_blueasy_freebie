@@ -23,38 +23,38 @@ portfolio_all.addEventListener("click", clickAll);
 /* ******************* FONCTIONS ******************** */
 
 function clickPanoramas() {
-  document.querySelector("#panoramas").style.display = 'block';
-  document.querySelector("#journal").style.display = 'none';
-  document.querySelector("#macro").style.display = 'none';
-  document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#panoramas").style.display = 'block';
+	document.querySelector("#journal").style.display = 'none';
+	document.querySelector("#macro").style.display = 'none';
+	document.querySelector("#portraits").style.display = 'none';
 }
 
 function clickPortraits() {
-  document.querySelector("#panoramas").style.display = 'none';
-  document.querySelector("#journal").style.display = 'none';
-  document.querySelector("#macro").style.display = 'none';
-  document.querySelector("#portraits").style.display = 'block';
+	document.querySelector("#panoramas").style.display = 'none';
+	document.querySelector("#journal").style.display = 'none';
+	document.querySelector("#macro").style.display = 'none';
+	document.querySelector("#portraits").style.display = 'block';
 }
 
 function clickMacro() {
-  document.querySelector("#panoramas").style.display = 'none';
-  document.querySelector("#journal").style.display = 'none';
-  document.querySelector("#macro").style.display = 'block';
-  document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#panoramas").style.display = 'none';
+	document.querySelector("#journal").style.display = 'none';
+	document.querySelector("#macro").style.display = 'block';
+	document.querySelector("#portraits").style.display = 'none';
 }
 
 function clickJournal() {
-  document.querySelector("#panoramas").style.display = 'none';
-  document.querySelector("#journal").style.display = 'block';
-  document.querySelector("#macro").style.display = 'none';
-  document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#panoramas").style.display = 'none';
+	document.querySelector("#journal").style.display = 'block';
+	document.querySelector("#macro").style.display = 'none';
+	document.querySelector("#portraits").style.display = 'none';
 }
 
 function clickAll() {
-  document.querySelector("#panoramas").style.display = 'block';
-  document.querySelector("#journal").style.display = 'block';
-  document.querySelector("#macro").style.display = 'block';
-  document.querySelector("#portraits").style.display = 'block';
+	document.querySelector("#panoramas").style.display = 'block';
+	document.querySelector("#journal").style.display = 'block';
+	document.querySelector("#macro").style.display = 'block';
+	document.querySelector("#portraits").style.display = 'block';
 }
 
 
@@ -106,6 +106,7 @@ formulaire.addEventListener("submit", function (e) { //fonction du gestionnaire 
 		}
 
 	};
+	verifFullname();
 
 	function verifMail() {
 		//console.log(valeurMail);
@@ -129,33 +130,45 @@ formulaire.addEventListener("submit", function (e) { //fonction du gestionnaire 
 		}
 
 	};
+	verifMail();
 
 	function verifMessage() {
 		//console.log(valeurMessage);
-		if (!message) {			
+		if (!message) {
 			return false;
-		} else if (valeurMessage == ""){
+		} else if (valeurMessage == "") {
 			errorMessage.innerText = "Do not hesitate to leave me a message";
 			return false;
-		} else if(!valeurMessage.match(/^[A-Z0-9a-z-é'èàçêâîôëäïö,0-9]+$/)){
+		} else if (!valeurMessage.match(/^[A-Z0-9a-z-é'èàçêâîôëäïö,0-9]+$/)) {
 			//console.log("Caractères incorrects !");
 			errorMessage.innerText = "Incorrect characters !";
+			return false
+		} else {
+			errorMessage.innerText = "";
+			//console.log("ok");
+			return true;
 		}
+	};
+	verifMessage();
+
+	if (verifFullname() && verifMail() && verifMessage() == true ){		
+		confirm("Do you confirm sending your message?");
+		return true;
+	} else {
+		return false;
 	}
 
-
-	if (verifFullname() == true) {
-		console.log("Envoie le formulaire");
-	}
-
-	if (verifMail() == true) {
-		console.log("Envoie le formulaire");
-	}
-
-	if (verifMessage() == true) {
-		console.log("Envoie le formulaire");
-	}
-
+	/*
+		if (verifFullname() == true) {
+			console.log("Envoie le formulaire");
+		} if (verifMail() == true) {
+			console.log("Envoie le formulaire");
+		} if (verifMessage() == true) {
+			console.log("Envoie le formulaire");
+		} else {
+			alert("Le formulaire n'a pas pu être envoyé !");
+		}
+		*/
 
 });
 

@@ -1,33 +1,6 @@
-/* ****** VARIABLES ****** */
-/* ****** POLICES ****** */
-@font-face {
-  font-family: "Segoe UI";
-  src: url("/assets/fonts/segoeui.eot");
-  src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url("/assets/fonts/segoeui.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoeui.woff") format("woff"), url("/assets/fonts/segoeui.svg#SegoeUI") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Segoe UI Semibold";
-  src: url("/assets/fonts/seguisb.eot");
-  src: local("Segoe Semibold"), local("Segoe WP Semibold"), url("/assets/fonts/seguisb.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/seguisb.woff") format("woff"), url("/assets/fonts/seguisb.svg#SegoeUISemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Segoe UI Bold";
-  src: url("/assets/fonts/segoeuib.eot");
-  src: local("Segoe Bold"), local("Segoe WP Bold"), url("/assets/fonts/segoeuib.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoeuib.woff") format("woff"), url("/assets/fonts/segoeuib.svg#SegoeUI") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Segoe UI Light";
-  src: url("/assets/fonts/segoeuil.eot");
-  src: local("Segoe UI Light"), local("Segoe WP Light"), url("/assets/fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoeuil.woff") format("woff"), url("/assets/fonts/segoeuil.svg#SegoeUI") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+/* ****** IMPORT POLICES ****** */
+@import "https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css";
+/* ****** VARIABLES COLOR ****** */
 /* ****** GENERAL ****** */
 * {
   margin: 0;
@@ -178,7 +151,6 @@ body main section #navbar_portfolio .container {
 body main section #navbar_portfolio .container .titre h2 {
   font-family: "Segoe UI Light";
   color: #515f67;
-  font-weight: lighter;
   font-size: 30px;
 }
 body main section #navbar_portfolio .container .titre .bordure {
@@ -217,39 +189,33 @@ body main section #portfolio .container .row #panoramas {
   padding-right: 20px;
 }
 body main section #portfolio .container .row #panoramas #autoroute {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #panoramas #foret {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #portraits {
   padding-right: 20px;
 }
 body main section #portfolio .container .row #portraits #pont {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #portraits #surfer {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #macro {
   padding-right: 20px;
 }
 body main section #portfolio .container .row #macro #rochers {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #macro #montagne {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 @media screen and (max-width: 992px) {
@@ -258,22 +224,15 @@ body main section #portfolio .container .row #macro #montagne {
   }
 }
 body main section #portfolio .container .row #journal #arbre {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main section #portfolio .container .row #journal #neige {
-  height: 270px;
-  width: 270px;
+  width: 100%;
   padding-bottom: 20px;
 }
 body main #section {
   background-color: #515f67;
-}
-@media screen and (max-width: 1200px) {
-  body main #section {
-    display: none;
-  }
 }
 body main #section .container .row .titre {
   padding: 75px 0;
@@ -326,11 +285,6 @@ body main #section .container .row .titre button {
 body main #section .container .row .video {
   max-width: 560px;
   padding: 80px 0;
-}
-@media screen and (max-width: 1200px) {
-  body main #section .container .row .video {
-    display: none;
-  }
 }
 body main #twitter {
   background-color: #4bcaff;
@@ -551,11 +505,13 @@ body #contact .container .row .form #formEnregistrer .fullname #fullname {
   background-color: transparent;
   background-clip: padding-box;
   border: 2px solid white;
+  color: white;
 }
 body #contact .container .row .form #formEnregistrer .fullname #errorFullname {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
+  color: #4bcaff;
 }
 body #contact .container .row .form #formEnregistrer .email label {
   font-family: "Segoe UI Bold";
@@ -570,11 +526,13 @@ body #contact .container .row .form #formEnregistrer .email #email {
   background-color: transparent;
   background-clip: padding-box;
   border: 2px solid white;
+  color: white;
 }
 body #contact .container .row .form #formEnregistrer .email #errorMail {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
+  color: #4bcaff;
 }
 body #contact .container .row .text {
   padding-top: 25px;
@@ -613,11 +571,13 @@ body #contact .container .row .form .message #message {
   background-color: transparent;
   background-clip: padding-box;
   border: 2px solid white;
+  color: white;
 }
 body #contact .container .row .form .message #errorMessage {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
+  color: #4bcaff;
 }
 body #contact .container .row .submit button {
   width: 100%;
@@ -644,6 +604,12 @@ footer {
 }
 footer .menu {
   padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  footer .menu .container .row {
+    justify-content: center;
+    padding-left: 50px;
+  }
 }
 footer .menu .container .row .menu_footer {
   padding-right: 0px;
@@ -689,7 +655,7 @@ footer .menu .container .row .annee {
 }
 @media screen and (max-width: 768px) {
   footer .menu .container .row .annee {
-    justify-content: flex-start;
+    display: none;
   }
 }
 footer .menu .container .row .annee p {
