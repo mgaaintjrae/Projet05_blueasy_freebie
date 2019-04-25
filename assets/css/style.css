@@ -18,7 +18,10 @@ body {
   /* *** Section WHO_IS *** */
   /* *** Section TESTIMONIALS *** */
   /* *** Section CONTACT *** */
+<<<<<<< HEAD
   /* correction form */
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 }
 body #hero {
   width: 100%;
@@ -134,6 +137,7 @@ body main #services .container .row .titre .bordure {
   width: 45px;
   margin-top: -5px;
 }
+<<<<<<< HEAD
 body main #services .container .row .titre .small_underline {
   border-top: 2px white solid;
   width: 45px;
@@ -145,6 +149,8 @@ body main #services .container .row .titre .small_underline--black {
 body main #services .container .row .titre .title--black {
   color: black;
 }
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #services .container .row img {
   margin: 30px 0 20px 0;
 }
@@ -269,6 +275,14 @@ body main .container-img:hover .container-img_hover {
 body main #section {
   background-color: #515f67;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1200px) {
+  body main #section {
+    display: none;
+  }
+}
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #section .container .row .titre {
   padding: 75px 0;
   display: flex;
@@ -321,6 +335,14 @@ body main #section .container .row .video {
   max-width: 560px;
   padding: 80px 0;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1200px) {
+  body main #section .container .row .video {
+    display: none;
+  }
+}
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #twitter {
   background-color: #4bcaff;
 }
@@ -542,12 +564,15 @@ body #contact .container .row .form #formEnregistrer .fullname #fullname {
   border: 2px solid white;
   color: white;
 }
+<<<<<<< HEAD
 body #contact .container .row .form #formEnregistrer .fullname #errorFullname {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body #contact .container .row .form #formEnregistrer .email label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
@@ -563,12 +588,15 @@ body #contact .container .row .form #formEnregistrer .email #email {
   border: 2px solid white;
   color: white;
 }
+<<<<<<< HEAD
 body #contact .container .row .form #formEnregistrer .email #errorMail {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body #contact .container .row .text {
   padding-top: 25px;
   display: flex;
@@ -600,6 +628,10 @@ body #contact .container .row .form .message label {
   color: white;
 }
 body #contact .container .row .form .message #message {
+<<<<<<< HEAD
+=======
+  height: 220px;
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
   display: block;
   width: 100%;
   border-radius: 0;
@@ -631,6 +663,7 @@ body #contact .container .row .submit button {
 body #contact .container .row .submit button:hover {
   background-color: #548df7;
 }
+<<<<<<< HEAD
 body .msg-error {
   display: none;
   color: red;
@@ -646,6 +679,8 @@ body .msg-error span {
 body .msg-error--show {
   display: inline-block;
 }
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 
 /* *************** FOOTER ****************** */
 footer {
@@ -655,12 +690,15 @@ footer {
 footer .menu {
   padding: 80px 0;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   footer .menu .container .row {
     justify-content: center;
     padding-left: 50px;
   }
 }
+=======
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 footer .menu .container .row .menu_footer {
   padding-right: 0px;
   padding-left: 0px;
@@ -705,7 +743,11 @@ footer .menu .container .row .annee {
 }
 @media screen and (max-width: 768px) {
   footer .menu .container .row .annee {
+<<<<<<< HEAD
     display: none;
+=======
+    justify-content: flex-start;
+>>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
   }
 }
 footer .menu .container .row .annee p {

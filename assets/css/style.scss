@@ -172,7 +172,24 @@ body {
                             color: black;
                         }
 
+                .row {
+
+                    img {
+                        margin: 30px 0 20px 0;
                     }
+
+                    h3 {
+                        font-family: 'Segoe UI Semibold';
+                        font-size: 24px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                    }
+
+                    p {
+                        font-family: 'Segoe UI Semibold';
+                        font-size: 12px;
+                    }
+
                 }
 
                 .row {
@@ -365,6 +382,9 @@ body {
             // @media screen and(max-width: 1200px) {
             //     display: none;
             // }
+            @media screen and(max-width: 1200px) {
+                display: none;
+            }
 
             .container {
 
@@ -431,6 +451,9 @@ body {
                         // @media screen and(max-width: 1200px) {
                         //     display: none;
                         // }
+                        @media screen and(max-width: 1200px) {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -551,6 +574,10 @@ body {
 
                         @media screen and(max-width: 768px) {
                             text-align: center;
+
+                        }
+                    }
+
 
                         }
                     }
@@ -688,6 +715,27 @@ body {
                         font-size: 30px;
                     }
 
+    #errorFormulaire{
+        color: red;
+    }
+    #contact {
+        width: 100%;
+        background: url("../images/background_contact.jpg") no-repeat fixed;
+        background-size: cover;
+
+        .container {
+            padding: 80px 0;
+
+            .row {
+                .titre {
+                    margin-bottom: 0;
+
+                    h2 {
+                        font-family: 'Segoe UI Light';
+                        color: white;
+                        font-size: 30px;
+                    }
+
                     .bordure {
                         border-bottom: 2px white solid;
                         width: 45px;
@@ -733,6 +781,16 @@ body {
                                 padding-right: 125px;
                                 padding-bottom: 6px;
                                 color: $bleu;
+
+                            #fullname {
+                                height: 60px;
+                                display: block;
+                                width: 100%;
+                                border-radius: 0;
+                                background-color: transparent;
+                                background-clip: padding-box;
+                                border: 2px solid white;
+
                             }
                         }
 
@@ -753,6 +811,9 @@ body {
                                 border: 2px solid white;
                                 color: white;
                             }
+                        }
+                    }
+                }
 
                             #errorMail {
                                 font-weight: bold;
@@ -803,6 +864,46 @@ body {
                         }
 
                         #message {
+                .text {
+                    padding-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    @media screen and(max-width: 992px) {
+                        display: none;
+                    }
+
+                    p {
+                        font-family: 'Segoe UI Semibold';
+                        font-size: 14px;
+                        color: white;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        margin-bottom: 0;
+
+                        li {
+                            font-family: 'Segoe UI';
+                            font-size: 14px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .row {
+                .form {
+                    .message {
+                        label {
+                            font-family: 'Segoe UI Bold';
+                            font-size: 14px;
+                            color: white;
+                        }
+
+                        #message {
+                            height: 220px;
                             display: block;
                             width: 100%;
                             border-radius: 0;
@@ -865,6 +966,8 @@ body {
     .msg-error--show{
         display:inline-block;
     }
+        }
+    }
 }
 
 /* *************** FOOTER ****************** */
@@ -881,6 +984,30 @@ footer {
                     justify-content: center;
                     padding-left: 50px;
                 }
+
+                .menu_footer {
+                    padding-right: 0px;
+                    padding-left: 0px;
+
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-between;
+
+
+                        .home {
+                            padding-left: 0;
+                        }
+
+                        li {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 12px;
+                            color: $gris;
+                            border-right: 1px #515f67 solid;
+                            height: 5px;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            padding-bottom: 19px;
 
                 .menu_footer {
                     padding-right: 0px;
@@ -933,6 +1060,7 @@ footer {
 
                     @media screen and(max-width: 768px) {
                         display: none;
+                        justify-content: flex-start;
                     }
 
                     p {
