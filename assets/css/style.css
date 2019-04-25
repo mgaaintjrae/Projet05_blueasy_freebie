@@ -18,6 +18,7 @@ body {
   /* *** Section WHO_IS *** */
   /* *** Section TESTIMONIALS *** */
   /* *** Section CONTACT *** */
+  /* correction form */
 }
 body #hero {
   width: 100%;
@@ -629,6 +630,21 @@ body #contact .container .row .submit button {
 }
 body #contact .container .row .submit button:hover {
   background-color: #548df7;
+}
+body .msg-error {
+  display: none;
+  color: red;
+  margin-left: 15px;
+  font-size: 0.85rem;
+}
+body .msg-error span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 5px 8px;
+}
+body .msg-error--show {
+  display: inline-block;
 }
 
 /* *************** FOOTER ****************** */

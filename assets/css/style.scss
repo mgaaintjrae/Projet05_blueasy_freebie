@@ -844,7 +844,26 @@ body {
                     }
                 }
             }
+        }   
+
+    }
+     /* correction form */
+
+     .msg-error {
+        display: none;
+        color: red;
+        margin-left: 15px;
+        font-size: .85rem;
+
+        span {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 5px 8px;
         }
+    }
+    .msg-error--show{
+        display:inline-block;
     }
 }
 
