@@ -62,7 +62,7 @@ function clickAll() {
 
 /* ****************************   FORMULAIRE   ****************************** */
 
-var fullname = document.querySelector("#fullname"); //champ fullname
+/*var fullname = document.querySelector("#fullname"); //champ fullname
 var mail = document.querySelector("#email"); //champ email
 var message = document.querySelector("#message"); //champ message
 var formulaire = document.querySelector("#formEnregistrer"); //champ formulaire
@@ -169,9 +169,9 @@ formulaire.addEventListener("submit", function (e) { //fonction du gestionnaire 
 			alert("Le formulaire n'a pas pu être envoyé !");
 		}
 		*/
-
+/*
 });
-
+*/
 
 
 /* ****************************   FORMULAIRE   ****************************** 
@@ -238,3 +238,5 @@ window.onload=function(){
 		}  
 	}
 	*/
+	
+	

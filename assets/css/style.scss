@@ -8,6 +8,7 @@ $gris: #515f67;
 $grisFonce: #353f46;
 
 /* ****** GENERAL ****** */
+
 * {
     margin: 0;
     padding: 0;
@@ -156,6 +157,21 @@ body {
                             width: 45px;
                             margin-top: -5px;
                         }
+
+                        .small_underline {
+                            border-top: 2px white solid;
+                            width: 45px;
+                            display: block;
+                        }
+
+                        .small_underline--black {
+                            border-top-color: black;
+                        }
+
+                        .title--black {
+                            color: black;
+                        }
+
                     }
                 }
 
@@ -314,6 +330,32 @@ body {
                     }
                 }
             }
+        }
+
+        /* Test hover + */
+        .container-img {
+            position: relative;
+        }
+
+        .container-img_hover {
+            width: 270px;
+            height: 270px;
+            text-align: center;
+            line-height: 270px;
+            color: white;
+            font-size: 4.7rem;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, .42);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity .800s linear;
+        }
+
+        .container-img:hover .container-img_hover {
+            opacity: 1;
+            transition: opacity .800s linear;
+            cursor: pointer;
         }
 
         /* *** Section SECTION *** */

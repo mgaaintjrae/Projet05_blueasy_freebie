@@ -112,6 +112,7 @@ body #hero #section_hero #title .bas h1 span {
 body main {
   /* *** Section SERVICES *** */
   /* *** Section PORTFOLIO *** */
+  /* Test hover + */
   /* *** Section SECTION *** */
   /* *** Section TWITTER *** */
 }
@@ -131,6 +132,17 @@ body main #services .container .row .titre .bordure {
   border-top: 3px white solid;
   width: 45px;
   margin-top: -5px;
+}
+body main #services .container .row .titre .small_underline {
+  border-top: 2px white solid;
+  width: 45px;
+  display: block;
+}
+body main #services .container .row .titre .small_underline--black {
+  border-top-color: black;
+}
+body main #services .container .row .titre .title--black {
+  color: black;
 }
 body main #services .container .row img {
   margin: 30px 0 20px 0;
@@ -230,6 +242,28 @@ body main section #portfolio .container .row #journal #arbre {
 body main section #portfolio .container .row #journal #neige {
   width: 100%;
   padding-bottom: 20px;
+}
+body main .container-img {
+  position: relative;
+}
+body main .container-img_hover {
+  width: 270px;
+  height: 270px;
+  text-align: center;
+  line-height: 270px;
+  color: white;
+  font-size: 4.7rem;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.42);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.8s linear;
+}
+body main .container-img:hover .container-img_hover {
+  opacity: 1;
+  transition: opacity 0.8s linear;
+  cursor: pointer;
 }
 body main #section {
   background-color: #515f67;
