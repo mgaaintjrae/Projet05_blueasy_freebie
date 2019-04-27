@@ -56,7 +56,7 @@
                 <div id="navbarNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#hero">HOME</a>
+                            <a class="h nav-link" href="#hero">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">SERVICES</a>
@@ -95,12 +95,9 @@
         <section id="services" class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="titre col-12">
+                    <div class="titre_serv col-12">
                         <h2>SERVICES</h2>
                         <div class="bordure"></div>
-                        <h2>Hello, world!<span class="small_underline"></span></h2>
-                        <h2 class="title--black">Autre titre<span class="small_underline small_underline--black"></span>
-                        </h2>
                     </div>
                 </div>
                 <div class="row">
@@ -133,108 +130,91 @@
         </section>
 
         <!-- Section PORTFOLIO -->
-        <section>
-            <nav id="navbar_portfolio" class="container-fluid navbar navbar-expand-lg navbar-light">
+        <section class="portfolio">
+            <div class="container-fluid">
                 <div class="container">
-                    <div class="titre">
-                        <h2 class="navbar-brand">PORTFOLIO</h2>
-                        <div class="bordure"></div>
-                    </div>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_portfolio"
-                        aria-controls="menu_portfolio" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="menu_portfolio" class="collapse navbar-collapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" id="linkAll">ALL</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="linkPanoramas">PANORAMAS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="linkPortraits">PORTRAITS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="linkMacro">MACRO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="linkJournal">JOURNAL</a>
-                            </li>
-                        </ul>
+                    <div class="titre row">
+                        <div class="titre_menu col-6">
+                            <h2>PORTFOLIO</h2>
+                            <div class="bordure"></div>
+                        </div>
+                        <div class="menu col-6">
+                            <ul>
+                                <li id="linkAll">ALL</li>
+                                <li id="linkPanoramas">PANORAMAS</li>
+                                <li id="linkPortraits">PORTRAITS</li>
+                                <li id="linkMacro">MACRO</li>
+                                <li id="linkJournal">JOURNAL</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
             <div id="portfolio" class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div id="panoramas">
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="autoroute" src="assets/images/portfolio_autoroute.jpg"
-                                    width="467" height="292" alt="autoroute sur mer/océan en noir et blanc">
+                        <div class="images col-12">
+                            <div class="haut container-img">
+                                <img id="autoroute" src="assets/images/portfolio_autoroute.jpg" width="270" height="270"
+                                    alt="autoroute sur mer/océan en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="foret" src="assets/images/portfolio_foret.jpg" width="600"
-                                    height="338" alt="chalet en boir au mileu d'une foret de sapins en noir er blanc">
-                            </div>
-                        </div>
-                        <div id="portraits">
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="pont" src="assets/images/portfolio_pont.jpg" width="600"
-                                    height="375"
+                            <div class="haut container-img">
+                                <img id="pont" src="assets/images/portfolio_pont.jpg" width="270" height="270"
                                     alt="partie supérieur d'un grand pont dans le brouillard avec ville au loin en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="surfer" src="assets/images/portfolio_surfer.jpg" width="600"
-                                    height="281" alt="surfeur devant une énorme vague en noir et blanc">
+                            <div class="haut container-img">
+                                <img id="rochers" src="assets/images/portfolio_rochers.jpg" width="270" height="270"
+                                    alt="rochers dans l'eau avec brume en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                        </div>
-                        <div id="macro">
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="rochers" src="assets/images/portfolio_rochers.jpg"
-                                    width="600" height="338" alt="rochers dans l'eau avec brume en noir et blanc">
+                            <div class="haut container-img">
+                                <img id="arbre" src="assets/images/portfolio_arbre.jpg" width="270" height="270"
+                                    alt="arbre au loin dans la brume en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="montagne" src="assets/images/portfolio_montagne.jpg"
-                                    width="600" height="375" alt="montagnes avec neige éternelle en noir et blanc">
+                            <div class="container-img">
+                                <img id="foret" src="assets/images/portfolio_foret.jpg" width="270" height="270"
+                                    alt="chalet en boir au mileu d'une foret de sapins en noir er blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                        </div>
-                        <div id="journal">
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="arbre" src="assets/images/portfolio_arbre.jpg" width="600"
-                                    height="960" alt="arbre au loin dans la brume en noir et blanc">
+                            <div class="container-img">
+                                <img id="surfer" src="assets/images/portfolio_surfer.jpg" width="270" height="270"
+                                    alt="surfeur devant une énorme vague en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
-                            <div class="col-6-sm col-6-md col-3-lg">
-                                <img class="img-fluid" id="neige" src="assets/images/portfolio_neige.jpg" width="600"
-                                    height="375" alt="montagnes avec neige éternelle avec nuages en noir et blanc">
+                            <div class="container-img">
+                                <img id="montagne" src="assets/images/portfolio_montagne.jpg" width="270" height="270"
+                                    alt="montagnes avec neige éternelle en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
+                            </div>
+                            <div class="container-img">
+                                <img id="neige" src="assets/images/portfolio_neige.jpg" width="270" height="270"
+                                    alt="montagnes avec neige éternelle avec nuages en noir et blanc">
+                                <div class="container-img_hover">
+                                    +
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Test hover + -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex">
-                    <div class="container-img">
-                        <img id="neige" src="assets/images/portfolio_neige.jpg" width="270" height="270"
-                            alt="montagnes avec neige éternelle avec nuages en noir et blanc">
-                        <div class="container-img_hover">
-                            +
-                        </div>
-                    </div>
-                    <div class="container-img">
-                        <img id="neige" src="assets/images/portfolio_neige.jpg" width="270" height="270"
-                            alt="montagnes avec neige éternelle avec nuages en noir et blanc">
-                        <div class="container-img_hover">
-                            +
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Section SECTION -->
         <section id="section" class="container-fluid">
@@ -403,37 +383,7 @@
         </section>-->
     </main>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <form action="" novalidate>
-                    <div class="form-group">
-                        <label for="fullname">Fullname<span class="msg-error"><span>Erreur</span>Cette étape est
-                                obligatoire</span></label>
-                        <input type="text" id="fullname" required name="fullname" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email<span class="msg-error"><span>Erreur</span>Saisir une adresse
-                                mail</span></label>
-                        <input type="email" id="email" required name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="cp">Email<span class="msg-error"><span>Erreur</span>Saisir un code
-                                postal</span></label>
-                        <input type="text" id="cp" required pattern="\d\d\d\d\d" name="cp"
-                            placeholder="Format ex : 25000" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message<span class="msg-error"><span>Erreur</span>Cette étape est
-                                obligatoire</span></label>
-                        <textarea name="message" id="message" required class="form-control" cols="30"
-                            rows="10"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-            </div>
-        </div>
-    </div>
+
 
     <!-- *************************************************** FOOTER ************************************************************************** -->
     <footer>

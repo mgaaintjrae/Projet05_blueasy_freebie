@@ -15,13 +15,7 @@ a {
 body {
   /* *************** HEADER ****************** */
   /* *************** MAIN ****************** */
-  /* *** Section WHO_IS *** */
-  /* *** Section TESTIMONIALS *** */
-  /* *** Section CONTACT *** */
-<<<<<<< HEAD
-  /* correction form */
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
+  /* *************** FOOTER ****************** */
 }
 body #hero {
   width: 100%;
@@ -60,6 +54,7 @@ body #hero #navbar #navbarNav a {
 body #hero #navbar #navbarNav a:hover {
   color: #4bcaff;
   border: 2px #4bcaff solid;
+  transition: border 0.5s;
 }
 @media screen and (max-width: 768px) {
   body #hero #navbar #navbarNav a:hover {
@@ -116,9 +111,11 @@ body #hero #section_hero #title .bas h1 span {
 body main {
   /* *** Section SERVICES *** */
   /* *** Section PORTFOLIO *** */
-  /* Test hover + */
   /* *** Section SECTION *** */
   /* *** Section TWITTER *** */
+  /* *** Section WHO_IS *** */
+  /* *** Section TESTIMONIALS *** */
+  /* *** Section CONTACT *** */
 }
 body main #services {
   background-color: #4bcaff;
@@ -127,30 +124,17 @@ body main #services {
 body main #services .container {
   padding: 80px 0;
 }
-body main #services .container .row .titre h2 {
+body main #services .container .row .titre_serv h2 {
+  color: white;
   font-family: "Segoe UI Light";
   font-weight: lighter;
   font-size: 30px;
 }
-body main #services .container .row .titre .bordure {
+body main #services .container .row .titre_serv .bordure {
   border-top: 3px white solid;
   width: 45px;
   margin-top: -5px;
 }
-<<<<<<< HEAD
-body main #services .container .row .titre .small_underline {
-  border-top: 2px white solid;
-  width: 45px;
-  display: block;
-}
-body main #services .container .row .titre .small_underline--black {
-  border-top-color: black;
-}
-body main #services .container .row .titre .title--black {
-  color: black;
-}
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #services .container .row img {
   margin: 30px 0 20px 0;
 }
@@ -164,96 +148,69 @@ body main #services .container .row p {
   font-family: "Segoe UI Semibold";
   font-size: 12px;
 }
-body main section #navbar_portfolio .container {
+body main .portfolio {
+  width: 100%;
   padding: 80px 0;
+  /* hover + */
 }
-body main section #navbar_portfolio .container .titre h2 {
+body main .portfolio .container .titre {
+  padding: 0 0 80px 0;
+}
+body main .portfolio .container .titre .titre_menu h2 {
   font-family: "Segoe UI Light";
   color: #515f67;
   font-size: 30px;
 }
-body main section #navbar_portfolio .container .titre .bordure {
+body main .portfolio .container .titre .titre_menu .bordure {
   border-top: 3px #515f67 solid;
-  margin-right: 71%;
-  margin-left: 2%;
-  margin-top: -12px;
+  width: 45px;
+  margin-top: -5px;
 }
-body main section #navbar_portfolio #menu_portfolio {
+body main .portfolio .container .menu {
   color: #515f67;
-  justify-content: flex-end;
   font-size: 14px;
+  padding-right: 0;
+  padding-top: 5px;
 }
-body main section #navbar_portfolio #menu_portfolio ul li {
+body main .portfolio .container .menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+body main .portfolio .container .menu li {
   font-family: "Segoe UI Bold";
-  font-weight: bold;
-  padding-left: 27px;
+  padding: 3px 16px;
   cursor: pointer;
-}
-body main section #navbar_portfolio a {
   color: #515f67;
   border: 2px transparent solid;
 }
-body main section #navbar_portfolio a:hover {
+body main .portfolio .container .menu li:hover {
   border: 2px #4bcaff solid;
   color: #4bcaff;
+  transition: border 0.5s;
 }
-body main section #portfolio .container {
-  padding-bottom: 80px;
+body main .portfolio .container .menu #linkAll {
+  border: 2px #4bcaff solid;
+  padding: 3px 16px;
+  color: #4bcaff;
 }
-body main section #portfolio .container .row {
+body main .portfolio #portfolio .container .row {
   display: flex;
   justify-content: center;
 }
-body main section #portfolio .container .row #panoramas {
-  padding-right: 20px;
+body main .portfolio #portfolio .container .row .images {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-body main section #portfolio .container .row #panoramas #autoroute {
-  width: 100%;
-  padding-bottom: 20px;
+body main .portfolio #portfolio .container .row .images .haut {
+  padding-bottom: 23px;
 }
-body main section #portfolio .container .row #panoramas #foret {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main section #portfolio .container .row #portraits {
-  padding-right: 20px;
-}
-body main section #portfolio .container .row #portraits #pont {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main section #portfolio .container .row #portraits #surfer {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main section #portfolio .container .row #macro {
-  padding-right: 20px;
-}
-body main section #portfolio .container .row #macro #rochers {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main section #portfolio .container .row #macro #montagne {
-  width: 100%;
-  padding-bottom: 20px;
-}
-@media screen and (max-width: 992px) {
-  body main section #portfolio .container .row #journal {
-    padding-right: 20px;
-  }
-}
-body main section #portfolio .container .row #journal #arbre {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main section #portfolio .container .row #journal #neige {
-  width: 100%;
-  padding-bottom: 20px;
-}
-body main .container-img {
+body main .portfolio .container-img {
   position: relative;
 }
-body main .container-img_hover {
+body main .portfolio .container-img_hover {
   width: 270px;
   height: 270px;
   text-align: center;
@@ -267,7 +224,7 @@ body main .container-img_hover {
   left: 0;
   transition: opacity 0.8s linear;
 }
-body main .container-img:hover .container-img_hover {
+body main .portfolio .container-img:hover .container-img_hover {
   opacity: 1;
   transition: opacity 0.8s linear;
   cursor: pointer;
@@ -275,14 +232,11 @@ body main .container-img:hover .container-img_hover {
 body main #section {
   background-color: #515f67;
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1200px) {
   body main #section {
     display: none;
   }
 }
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #section .container .row .titre {
   padding: 75px 0;
   display: flex;
@@ -335,14 +289,11 @@ body main #section .container .row .video {
   max-width: 560px;
   padding: 80px 0;
 }
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1200px) {
   body main #section .container .row .video {
     display: none;
   }
 }
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
 body main #twitter {
   background-color: #4bcaff;
 }
@@ -389,172 +340,191 @@ body main #twitter .container .text span {
   color: white;
   font-family: "Segoe UI Bold";
 }
-body #who_is {
+body main #who_is {
   width: 100%;
   background: url("../images/background_photographe.jpg") no-repeat fixed;
   background-size: cover;
   background-position: center;
 }
-body #who_is .container {
+body main #who_is .container {
   padding: 100px 0 170px 0;
 }
-body #who_is .container .row .titre {
+body main #who_is .container .row .titre {
   margin-bottom: 0;
 }
-body #who_is .container .row .titre h2 {
+body main #who_is .container .row .titre h2 {
   font-family: "Segoe UI Light";
   font-size: 30px;
   color: white;
 }
-body #who_is .container .row .titre .bordure {
+body main #who_is .container .row .titre .bordure {
   border-top: 3px white solid;
   width: 45px;
 }
-body #who_is .container .text_icons {
+body main #who_is .container .text_icons {
   padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
-  body #who_is .container .text_icons .text {
+  body main #who_is .container .text_icons .text {
     text-align: center;
   }
 }
-body #who_is .container .text_icons .text p {
+body main #who_is .container .text_icons .text p {
   font-size: 14px;
   color: white;
 }
-body #who_is .container .text_icons .icons {
+body main #who_is .container .text_icons .icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-body #who_is .container .text_icons .icons p {
+body main #who_is .container .text_icons .icons p {
   font-size: 14px;
   color: white;
 }
 @media screen and (max-width: 768px) {
-  body #who_is .container .text_icons .icons p {
+  body main #who_is .container .text_icons .icons p {
     text-align: center;
   }
 }
-body #who_is .container .text_icons .icons ul {
+body main #who_is .container ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
-  body #who_is .container .text_icons .icons ul {
+  body main #who_is .container ul {
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
 }
-body #who_is .container .text_icons .icons ul li {
+body main #who_is .container ul li {
   margin-right: 2%;
 }
-body #who_is .container .text_icons .icons ul li button {
+body main #who_is .container ul li button {
   border: 2px white solid;
   background-color: transparent;
   border-radius: inherit;
   border-color: white;
 }
-body #who_is .container .text_icons .icons ul li button i {
+body main #who_is .container ul li button i {
   color: white;
 }
-body #who_is .container .text_icons .icons ul li button .twitter:hover {
+body main #who_is .container ul li button .twitter:hover {
   color: #4bcaff;
 }
-body #who_is .container .text_icons .icons ul li button .google:hover {
+body main #who_is .container ul li button .google:hover {
   color: red;
 }
-body #who_is .container .text_icons .icons ul li button .dribbble:hover {
+body main #who_is .container ul li button .dribbble:hover {
   color: #b32940;
 }
-body #who_is .container .text_icons .icons ul li button .coffee:hover {
+body main #who_is .container ul li button .coffee:hover {
   color: black;
 }
-body #who_is .container .text_icons .icons ul li button:hover {
+body main #who_is .container ul li button:hover {
   background-color: #515f67;
 }
-body #testimonials .container {
+body main #testimonials .container {
   padding: 80px 0;
 }
-body #testimonials .container .row .titre {
+body main #testimonials .container .row .titre {
   display: flex;
   justify-content: space-between;
 }
-body #testimonials .container .row .titre h2 {
+body main #testimonials .container .row .titre h2 {
   color: #515f67;
   font-family: "Segoe UI Light";
   font-size: 30px;
 }
-body #testimonials .container .row .titre .quote {
+body main #testimonials .container .row .titre .quote {
   display: flex;
   align-items: center;
 }
-body #testimonials .container .row {
+body main #testimonials .container .row {
   margin-right: 0 !important;
 }
-body #testimonials .container .row .bordure {
+body main #testimonials .container .row .bordure {
   width: 45px;
   border-top: 2px #353f46 solid;
   margin-left: 15px;
   margin-top: -3px;
 }
-body #testimonials .container .row .text {
+body main #testimonials .container .row .text {
   padding-top: 25px;
   font-family: "Segoe UI Light";
   color: #515f67;
   font-size: 28px;
 }
-body #testimonials .container .row .author p {
+body main #testimonials .container .row .author p {
   padding-top: 10px;
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: #4bcaff;
 }
-body #errorFormulaire {
+body main #errorFormulaire {
   color: red;
 }
-body #contact {
+body main #contact {
   width: 100%;
   background: url("../images/background_contact.jpg") no-repeat fixed;
   background-size: cover;
 }
-body #contact .container {
+body main #contact .container {
   padding: 80px 0;
 }
-body #contact .container .row .titre {
+body main #contact .container .row .titre {
   margin-bottom: 0;
 }
-body #contact .container .row .titre h2 {
+body main #contact .container .row .titre h2 {
   font-family: "Segoe UI Light";
   color: white;
   font-size: 30px;
 }
-body #contact .container .row .titre .bordure {
+body main #contact .container .row .titre #errorFormulaire {
+  color: red;
+}
+body main #contact .container .row .titre #contact {
+  width: 100%;
+  background: url("../images/background_contact.jpg") no-repeat fixed;
+  background-size: cover;
+}
+body main #contact .container .row .titre #contact .container {
+  padding: 80px 0;
+}
+body main #contact .container .row .titre #contact .container .row .titre {
+  margin-bottom: 0;
+}
+body main #contact .container .row .titre #contact .container .row .titre h2 {
+  font-family: "Segoe UI Light";
+  color: white;
+  font-size: 30px;
+}
+body main #contact .container .row .titre #contact .container .row .titre .bordure {
   border-bottom: 2px white solid;
   width: 45px;
 }
-body #contact .container .row {
+body main #contact .container .row .titre #contact .container .row {
   padding-top: 30px;
 }
 @media screen and (max-width: 992px) {
-  body #contact .container .row {
+  body main #contact .container .row .titre #contact .container .row {
     display: flex;
     justify-content: center;
   }
 }
 @media screen and (max-width: 992px) {
-  body #contact .container .row .form {
+  body main #contact .container .row .titre #contact .container .row .form {
     width: 100%;
   }
 }
-body #contact .container .row .form #formEnregistrer .fullname label {
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body #contact .container .row .form #formEnregistrer .fullname #fullname {
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #fullname {
   height: 60px;
   display: block;
   width: 100%;
@@ -564,21 +534,27 @@ body #contact .container .row .form #formEnregistrer .fullname #fullname {
   border: 2px solid white;
   color: white;
 }
-<<<<<<< HEAD
-body #contact .container .row .form #formEnregistrer .fullname #errorFullname {
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #errorFullname {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
-body #contact .container .row .form #formEnregistrer .email label {
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #errorFullname #fullname {
+  height: 60px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 2px solid white;
+}
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname .email label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body #contact .container .row .form #formEnregistrer .email #email {
+body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname .email #email {
   height: 60px;
   display: block;
   width: 100%;
@@ -588,50 +564,74 @@ body #contact .container .row .form #formEnregistrer .email #email {
   border: 2px solid white;
   color: white;
 }
-<<<<<<< HEAD
-body #contact .container .row .form #formEnregistrer .email #errorMail {
+body main #contact .container .row .titre #contact .container .row .form #errorMail {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
-body #contact .container .row .text {
+body main #contact .container .row .titre #contact .text {
   padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
-  body #contact .container .row .text {
+  body main #contact .container .row .titre #contact .text {
     display: none;
   }
 }
-body #contact .container .row .text p {
+body main #contact .container .row .titre #contact .text p {
   font-family: "Segoe UI Semibold";
   font-size: 14px;
   color: white;
 }
-body #contact .container .row .text ul {
+body main #contact .container .row .titre #contact .text ul {
   list-style-type: none;
   margin-bottom: 0;
 }
-body #contact .container .row .text ul li {
+body main #contact .container .row .titre #contact .text ul li {
   font-family: "Segoe UI";
   font-size: 14px;
   color: white;
 }
-body #contact .container .row .form .message label {
+body main #contact .container .row .titre .row .form .message label {
   font-family: "Segoe UI Bold";
   font-size: 14px;
   color: white;
 }
-body #contact .container .row .form .message #message {
-<<<<<<< HEAD
-=======
+body main #contact .container .row .titre .row .form .message #message .text {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  body main #contact .container .row .titre .row .form .message #message .text {
+    display: none;
+  }
+}
+body main #contact .container .row .titre .row .form .message #message .text p {
+  font-family: "Segoe UI Semibold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .titre .row .form .message #message .text ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+body main #contact .container .row .titre .row .form .message #message .text ul li {
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .titre .row .form .message .row .form .message label {
+  font-family: "Segoe UI Bold";
+  font-size: 14px;
+  color: white;
+}
+body main #contact .container .row .titre .row .form .message .row .form .message #message {
   height: 220px;
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
   display: block;
   width: 100%;
   border-radius: 0;
@@ -640,13 +640,13 @@ body #contact .container .row .form .message #message {
   border: 2px solid white;
   color: white;
 }
-body #contact .container .row .form .message #errorMessage {
+body main #contact .container .row .titre .row .form .message .row .form .message #errorMessage {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-body #contact .container .row .submit button {
+body main #contact .container .row .titre .row .form .message .row .submit button {
   width: 100%;
   height: 60px;
   border-radius: inherit;
@@ -660,58 +660,32 @@ body #contact .container .row .submit button {
   font-size: 14px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-body #contact .container .row .submit button:hover {
+body main #contact .container .row .titre .row .form .message .row .submit button:hover {
   background-color: #548df7;
 }
-<<<<<<< HEAD
-body .msg-error {
-  display: none;
-  color: red;
-  margin-left: 15px;
-  font-size: 0.85rem;
-}
-body .msg-error span {
-  display: inline-block;
-  background-color: red;
-  color: white;
-  padding: 5px 8px;
-}
-body .msg-error--show {
-  display: inline-block;
-}
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
-
-/* *************** FOOTER ****************** */
-footer {
+body footer {
   height: 170px;
   background-color: #353f46;
 }
-footer .menu {
+body footer .menu {
   padding: 80px 0;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
-  footer .menu .container .row {
+  body footer .menu .container .row {
     justify-content: center;
     padding-left: 50px;
   }
 }
-=======
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
-footer .menu .container .row .menu_footer {
+body footer .menu .container .row .menu_footer {
   padding-right: 0px;
   padding-left: 0px;
 }
-footer .menu .container .row .menu_footer ul {
+body footer .menu .container .row .menu_footer ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-footer .menu .container .row .menu_footer ul .home {
-  padding-left: 0;
-}
-footer .menu .container .row .menu_footer ul li {
+body footer .menu .container .row .menu_footer ul li {
   font-family: "Segoe UI Semibold";
   font-size: 12px;
   color: #515f67;
@@ -721,36 +695,36 @@ footer .menu .container .row .menu_footer ul li {
   padding-left: 20px;
   padding-bottom: 19px;
 }
+body footer .menu .container .row .menu_footer ul li .home {
+  padding-left: 0;
+}
 @media screen and (max-width: 768px) {
-  footer .menu .container .row .menu_footer ul li {
+  body footer .menu .container .row .menu_footer ul li {
     font-size: 7px;
   }
 }
-footer .menu .container .row .menu_footer ul li a {
+body footer .menu .container .row .menu_footer ul li a {
   text-decoration: none;
 }
-footer .menu .container .row .menu_footer ul li a:hover {
+body footer .menu .container .row .menu_footer ul li a:hover {
   color: #1b1b1b;
 }
-footer .menu .container .row .menu_footer ul .contact {
+body footer .menu .container .row .menu_footer ul li .contact {
   padding-right: 0;
   border-right: none;
 }
-footer .menu .container .row .annee {
+body footer .menu .container .row .annee {
   padding-right: 0px;
   display: flex;
   justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
-  footer .menu .container .row .annee {
-<<<<<<< HEAD
+  body footer .menu .container .row .annee {
     display: none;
-=======
     justify-content: flex-start;
->>>>>>> 1c3f371d2b881441bae9b81ac129d33ace06ce85
   }
 }
-footer .menu .container .row .annee p {
+body footer .menu .container .row .annee p {
   font-family: "Segoe UI Semibold";
   font-size: 12px;
   color: #515f67;

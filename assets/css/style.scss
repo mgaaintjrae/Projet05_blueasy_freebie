@@ -64,17 +64,18 @@ body {
                 a {
                     color: white;
                     border: 2px transparent solid;
+                    
                 }
-
+                
                 a:hover {
                     color: $bleu;
                     border: 2px $bleu solid;
 
-                    // transition: border 0.5s;
+                    transition: border 0.5s;
                     @media screen and(max-width: 768px) {
                         border: none;
                     }
-                }
+                }                
             }
         }
 
@@ -145,8 +146,9 @@ body {
                 padding: 80px 0;
 
                 .row {
-                    .titre {
+                    .titre_serv {
                         h2 {
+                            color: white;
                             font-family: 'Segoe UI Light';
                             font-weight: lighter;
                             font-size: 30px;
@@ -157,39 +159,7 @@ body {
                             width: 45px;
                             margin-top: -5px;
                         }
-
-                        .small_underline {
-                            border-top: 2px white solid;
-                            width: 45px;
-                            display: block;
-                        }
-
-                        .small_underline--black {
-                            border-top-color: black;
-                        }
-
-                        .title--black {
-                            color: black;
-                        }
-
-                .row {
-
-                    img {
-                        margin: 30px 0 20px 0;
                     }
-
-                    h3 {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 24px;
-                        font-weight: 500;
-                        padding-bottom: 5px;
-                    }
-
-                    p {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 12px;
-                    }
-
                 }
 
                 .row {
@@ -209,170 +179,120 @@ body {
                         font-family: 'Segoe UI Semibold';
                         font-size: 12px;
                     }
-
                 }
+
             }
         }
 
         /* *** Section PORTFOLIO *** */
-        section {
-            #navbar_portfolio {
-                .container {
-                    padding: 80px 0;
+        .portfolio {
+            width: 100%;
+            padding: 80px 0;
 
-                    .titre {
+            .container {
+                .titre {
+                    padding: 0 0 80px 0;
+
+                    .titre_menu {
+
                         h2 {
                             font-family: 'Segoe UI Light';
                             color: $gris;
-                            // font-weight: lighter;
                             font-size: 30px;
                         }
 
                         .bordure {
                             border-top: 3px #515f67 solid;
-                            margin-right: 71%;
-                            margin-left: 2%;
-                            margin-top: -12px;
+                            width: 45px;
+                            margin-top: -5px;
                         }
                     }
                 }
 
-                #menu_portfolio {
+                .menu {
+                    
                     color: $gris;
-                    justify-content: flex-end;
                     font-size: 14px;
+                    padding-right: 0;
+                    padding-top: 5px;
 
                     ul {
-                        li {
-                            font-family: 'Segoe UI Bold';
-                            font-weight: bold;
-                            padding-left: 27px;
-                            cursor: pointer;
-                        }
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-between;
                     }
-                }
 
-                a {
-                    color: $gris;
-                    border: 2px transparent solid;
-                }
+                    li {
+                        font-family: 'Segoe UI Bold';                        
+                        padding: 3px 16px;
+                        cursor: pointer;
+                        color: $gris;
+                        border: 2px transparent solid;
+                        
 
-                a:hover {
-                    border: 2px $bleu solid;
-                    color: $bleu;
+                    }
+
+                    li:hover {
+                        border: 2px $bleu solid;
+                        color: $bleu;
+                        transition: border 0.5s;
+                    }
+                    #linkAll{
+                        border: 2px $bleu solid;
+                        padding: 3px 16px;
+                        color: $bleu;
+                    }
+                    
                 }
             }
 
             #portfolio {
                 .container {
-                    padding-bottom: 80px;
-
                     .row {
                         display: flex;
                         justify-content: center;
 
-                        #panoramas {
-                            padding-right: 20px;
+                        .images {
+                            padding: 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
 
-                            #autoroute {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
+                            .haut {
+                                padding-bottom: 23px;
 
-                            #foret {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-                        }
 
-                        #portraits {
-                            padding-right: 20px;
-
-                            #pont {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-
-                            #surfer {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-                        }
-
-                        #macro {
-                            padding-right: 20px;
-
-                            #rochers {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-
-                            #montagne {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-                        }
-
-                        #journal {
-                            @media screen and(max-width: 992px) {
-                                padding-right: 20px;
-                            }
-
-                            #arbre {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
-                            }
-
-                            #neige {
-                                width: 100%;
-                                // height: 270px;
-                                // width: 270px;
-                                padding-bottom: 20px;
                             }
                         }
                     }
                 }
             }
-        }
 
-        /* Test hover + */
-        .container-img {
-            position: relative;
-        }
+            /* hover + */
+            .container-img {
+                position: relative;
+            }
 
-        .container-img_hover {
-            width: 270px;
-            height: 270px;
-            text-align: center;
-            line-height: 270px;
-            color: white;
-            font-size: 4.7rem;
-            opacity: 0;
-            background-color: rgba(0, 0, 0, .42);
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: opacity .800s linear;
-        }
+            .container-img_hover {
+                width: 270px;
+                height: 270px;
+                text-align: center;
+                line-height: 270px;
+                color: white;
+                font-size: 4.7rem;
+                opacity: 0;
+                background-color: rgba(0, 0, 0, .42);
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: opacity .800s linear;
+            }
 
-        .container-img:hover .container-img_hover {
-            opacity: 1;
-            transition: opacity .800s linear;
-            cursor: pointer;
+            .container-img:hover .container-img_hover {
+                opacity: 1;
+                transition: opacity .800s linear;
+                cursor: pointer;
+            }
         }
 
         /* *** Section SECTION *** */
@@ -520,112 +440,433 @@ body {
                 }
             }
         }
-    }
 
-    /* *** Section WHO_IS *** */
-    #who_is {
-        width: 100%;
-        background: url("../images/background_photographe.jpg") no-repeat fixed;
-        background-size: cover;
-        background-position: center;
 
-        .container {
-            padding: 100px 0 170px 0;
+        /* *** Section WHO_IS *** */
+        #who_is {
+            width: 100%;
+            background: url("../images/background_photographe.jpg") no-repeat fixed;
+            background-size: cover;
+            background-position: center;
 
-            .row {
-                .titre {
-                    margin-bottom: 0;
+            .container {
+                padding: 100px 0 170px 0;
 
-                    h2 {
-                        font-family: 'Segoe UI Light';
-                        font-size: 30px;
-                        color: white;
+                .row {
+                    .titre {
+                        margin-bottom: 0;
+
+                        h2 {
+                            font-family: 'Segoe UI Light';
+                            font-size: 30px;
+                            color: white;
+                        }
+
+                        .bordure {
+                            border-top: 3px white solid;
+                            width: 45px;
+                        }
+                    }
+                }
+
+                .text_icons {
+                    padding-top: 30px;
+
+                    .text {
+                        @media screen and(max-width: 768px) {
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: white;
+                        }
                     }
 
-                    .bordure {
-                        border-top: 3px white solid;
-                        width: 45px;
+                    .icons {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 14px;
+                            color: white;
+
+                            @media screen and(max-width: 768px) {
+                                text-align: center;
+
+                            }
+                        }
+
+
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    @media screen and(max-width: 768px) {
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    li {
+                        margin-right: 2%;
+
+                        button {
+                            border: 2px white solid;
+                            background-color: transparent;
+                            border-radius: inherit;
+                            border-color: white;
+
+                            i {
+                                color: white;
+                            }
+
+                            .twitter:hover {
+                                color: $bleu;
+                            }
+
+                            .google:hover {
+                                color: red;
+                            }
+
+                            .dribbble:hover {
+                                color: rgb(179, 41, 64);
+                            }
+
+                            .coffee:hover {
+                                color: black;
+                            }
+                        }
+
+                        button:hover {
+
+                            background-color: $gris;
+                        }
                     }
                 }
             }
+        }
 
-            .text_icons {
-                padding-top: 30px;
 
-                .text {
-                    @media screen and(max-width: 768px) {
-                        text-align: center;
-                    }
 
-                    p {
-                        font-size: 14px;
-                        color: white;
+        /* *** Section TESTIMONIALS *** */
+        #testimonials {
+            .container {
+                padding: 80px 0;
+
+                .row {
+                    .titre {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h2 {
+                            color: $gris;
+                            font-family: 'Segoe UI Light';
+                            font-size: 30px
+                        }
+
+                        .quote {
+                            display: flex;
+                            align-items: center;
+                        }
                     }
                 }
 
-                .icons {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                .row {
+                    margin-right: 0 !important;
 
-                    p {
-                        font-size: 14px;
-                        color: white;
-
-                        @media screen and(max-width: 768px) {
-                            text-align: center;
-
-                        }
+                    .bordure {
+                        width: 45px;
+                        border-top: 2px #353f46 solid;
+                        margin-left: 15px;
+                        margin-top: -3px;
                     }
+                }
 
+                .row {
 
-                        }
+                    .text {
+                        padding-top: 25px;
+                        font-family: 'Segoe UI Light';
+                        color: $gris;
+                        font-size: 28px
                     }
+                }
 
-                    ul {
-                        list-style-type: none;
-                        display: flex;
-                        justify-content: flex-start;
-
-                        @media screen and(max-width: 768px) {
-                            justify-content: center;
-                            flex-direction: column;
-                            align-items: center;
+                .row {
+                    .author {
+                        p {
+                            padding-top: 10px;
+                            font-family: 'Segoe UI Bold';
+                            font-size: 14px;
+                            color: $bleu;
                         }
 
-                        li {
-                            margin-right: 2%;
+                    }
+                }
+            }
+        }
 
-                            button {
-                                border: 2px white solid;
-                                background-color: transparent;
-                                border-radius: inherit;
-                                border-color: white;
+        /* *** Section CONTACT *** */
+        #errorFormulaire {
+            color: red;
+        }
 
-                                i {
+        #contact {
+            width: 100%;
+            background: url("../images/background_contact.jpg") no-repeat fixed;
+            background-size: cover;
+
+            .container {
+                padding: 80px 0;
+
+                .row {
+                    .titre {
+                        margin-bottom: 0;
+
+                        h2 {
+                            font-family: 'Segoe UI Light';
+                            color: white;
+                            font-size: 30px;
+                        }
+
+                        #errorFormulaire {
+                            color: red;
+                        }
+
+                        #contact {
+                            width: 100%;
+                            background: url("../images/background_contact.jpg") no-repeat fixed;
+                            background-size: cover;
+
+                            .container {
+                                padding: 80px 0;
+
+                                .row {
+                                    .titre {
+                                        margin-bottom: 0;
+
+                                        h2 {
+                                            font-family: 'Segoe UI Light';
+                                            color: white;
+                                            font-size: 30px;
+                                        }
+
+                                        .bordure {
+                                            border-bottom: 2px white solid;
+                                            width: 45px;
+                                        }
+                                    }
+                                }
+
+                                .row {
+                                    padding-top: 30px;
+
+                                    @media screen and(max-width: 992px) {
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+
+                                    .form {
+                                        @media screen and(max-width: 992px) {
+                                            width: 100%;
+                                        }
+
+                                        #formEnregistrer {
+                                            .fullname {
+                                                label {
+                                                    font-family: 'Segoe UI Bold';
+                                                    font-size: 14px;
+                                                    color: white;
+                                                }
+
+                                                #fullname {
+                                                    height: 60px;
+                                                    display: block;
+                                                    width: 100%;
+                                                    border-radius: 0;
+                                                    background-color: transparent;
+                                                    background-clip: padding-box;
+                                                    border: 2px solid white;
+                                                    color: white;
+
+                                                }
+
+                                                #errorFullname {
+                                                    font-weight: bold;
+                                                    padding-right: 125px;
+                                                    padding-bottom: 6px;
+                                                    color: $bleu;
+
+                                                    #fullname {
+                                                        height: 60px;
+                                                        display: block;
+                                                        width: 100%;
+                                                        border-radius: 0;
+                                                        background-color: transparent;
+                                                        background-clip: padding-box;
+                                                        border: 2px solid white;
+
+                                                    }
+                                                }
+
+                                                .email {
+                                                    label {
+                                                        font-family: 'Segoe UI Bold';
+                                                        font-size: 14px;
+                                                        color: white;
+                                                    }
+
+                                                    #email {
+                                                        height: 60px;
+                                                        display: block;
+                                                        width: 100%;
+                                                        border-radius: 0;
+                                                        background-color: transparent;
+                                                        background-clip: padding-box;
+                                                        border: 2px solid white;
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        #errorMail {
+                                            font-weight: bold;
+                                            padding-right: 125px;
+                                            padding-bottom: 6px;
+                                            color: $bleu;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .text {
+                                padding-top: 25px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                @media screen and(max-width: 992px) {
+                                    display: none;
+                                }
+
+                                p {
+                                    font-family: 'Segoe UI Semibold';
+                                    font-size: 14px;
                                     color: white;
                                 }
 
-                                .twitter:hover {
-                                    color: $bleu;
-                                }
+                                ul {
+                                    list-style-type: none;
+                                    margin-bottom: 0;
 
-                                .google:hover {
-                                    color: red;
-                                }
-
-                                .dribbble:hover {
-                                    color: rgb(179, 41, 64);
-                                }
-
-                                .coffee:hover {
-                                    color: black;
+                                    li {
+                                        font-family: 'Segoe UI';
+                                        font-size: 14px;
+                                        color: white;
+                                    }
                                 }
                             }
+                        }
 
-                            button:hover {
+                        .row {
+                            .form {
+                                .message {
+                                    label {
+                                        font-family: 'Segoe UI Bold';
+                                        font-size: 14px;
+                                        color: white;
+                                    }
 
-                                background-color: $gris;
+                                    #message {
+                                        .text {
+                                            padding-top: 25px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+
+                                            @media screen and(max-width: 992px) {
+                                                display: none;
+                                            }
+
+                                            p {
+                                                font-family: 'Segoe UI Semibold';
+                                                font-size: 14px;
+                                                color: white;
+                                            }
+
+                                            ul {
+                                                list-style-type: none;
+                                                margin-bottom: 0;
+
+                                                li {
+                                                    font-family: 'Segoe UI';
+                                                    font-size: 14px;
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .row {
+                                        .form {
+                                            .message {
+                                                label {
+                                                    font-family: 'Segoe UI Bold';
+                                                    font-size: 14px;
+                                                    color: white;
+                                                }
+
+                                                #message {
+                                                    height: 220px;
+                                                    display: block;
+                                                    width: 100%;
+                                                    border-radius: 0;
+                                                    background-color: transparent;
+                                                    background-clip: padding-box;
+                                                    border: 2px solid white;
+                                                    color: white;
+                                                }
+
+                                                #errorMessage {
+                                                    font-weight: bold;
+                                                    padding-right: 125px;
+                                                    padding-bottom: 6px;
+                                                    color: $bleu;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .row {
+                                        .submit {
+                                            button {
+                                                width: 100%;
+                                                height: 60px;
+                                                border-radius: inherit;
+                                                color: white;
+                                                -webkit-user-select: none;
+                                                -moz-user-select: none;
+                                                -ms-user-select: none;
+                                                user-select: none;
+                                                background-color: $bleu;
+                                                font-family: 'Segoe UI Bold';
+                                                font-size: 14px;
+                                                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                                            }
+
+                                            button:hover {
+                                                background-color: rgb(84, 141, 247);
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -634,447 +875,85 @@ body {
         }
     }
 
-    /* *** Section TESTIMONIALS *** */
-    #testimonials {
-        .container {
+
+    /* *************** FOOTER ****************** */
+    footer {
+        height: 170px;
+        background-color: $grisFonce;
+
+        .menu {
             padding: 80px 0;
 
-            .row {
-                .titre {
-                    display: flex;
-                    justify-content: space-between;
-
-                    h2 {
-                        color: $gris;
-                        font-family: 'Segoe UI Light';
-                        font-size: 30px
-                    }
-
-                    .quote {
-                        display: flex;
-                        align-items: center;
-                    }
-                }
-            }
-
-            .row {
-                margin-right: 0 !important;
-
-                .bordure {
-                    width: 45px;
-                    border-top: 2px #353f46 solid;
-                    margin-left: 15px;
-                    margin-top: -3px;
-                }
-            }
-
-            .row {
-
-                .text {
-                    padding-top: 25px;
-                    font-family: 'Segoe UI Light';
-                    color: $gris;
-                    font-size: 28px
-                }
-            }
-
-            .row {
-                .author {
-                    p {
-                        padding-top: 10px;
-                        font-family: 'Segoe UI Bold';
-                        font-size: 14px;
-                        color: $bleu;
-                    }
-
-                }
-            }
-        }
-    }
-
-    /* *** Section CONTACT *** */
-    #errorFormulaire {
-        color: red;
-    }
-
-    #contact {
-        width: 100%;
-        background: url("../images/background_contact.jpg") no-repeat fixed;
-        background-size: cover;
-
-        .container {
-            padding: 80px 0;
-
-            .row {
-                .titre {
-                    margin-bottom: 0;
-
-                    h2 {
-                        font-family: 'Segoe UI Light';
-                        color: white;
-                        font-size: 30px;
-                    }
-
-    #errorFormulaire{
-        color: red;
-    }
-    #contact {
-        width: 100%;
-        background: url("../images/background_contact.jpg") no-repeat fixed;
-        background-size: cover;
-
-        .container {
-            padding: 80px 0;
-
-            .row {
-                .titre {
-                    margin-bottom: 0;
-
-                    h2 {
-                        font-family: 'Segoe UI Light';
-                        color: white;
-                        font-size: 30px;
-                    }
-
-                    .bordure {
-                        border-bottom: 2px white solid;
-                        width: 45px;
-                    }
-                }
-            }
-
-            .row {
-                padding-top: 30px;
-
-                @media screen and(max-width: 992px) {
-                    display: flex;
-                    justify-content: center;
-                }
-
-                .form {
-                    @media screen and(max-width: 992px) {
-                        width: 100%;
-                    }
-
-                    #formEnregistrer {
-                        .fullname {
-                            label {
-                                font-family: 'Segoe UI Bold';
-                                font-size: 14px;
-                                color: white;
-                            }
-
-                            #fullname {
-                                height: 60px;
-                                display: block;
-                                width: 100%;
-                                border-radius: 0;
-                                background-color: transparent;
-                                background-clip: padding-box;
-                                border: 2px solid white;
-                                color: white;
-
-                            }
-
-                            #errorFullname {
-                                font-weight: bold;
-                                padding-right: 125px;
-                                padding-bottom: 6px;
-                                color: $bleu;
-
-                            #fullname {
-                                height: 60px;
-                                display: block;
-                                width: 100%;
-                                border-radius: 0;
-                                background-color: transparent;
-                                background-clip: padding-box;
-                                border: 2px solid white;
-
-                            }
-                        }
-
-                        .email {
-                            label {
-                                font-family: 'Segoe UI Bold';
-                                font-size: 14px;
-                                color: white;
-                            }
-
-                            #email {
-                                height: 60px;
-                                display: block;
-                                width: 100%;
-                                border-radius: 0;
-                                background-color: transparent;
-                                background-clip: padding-box;
-                                border: 2px solid white;
-                                color: white;
-                            }
-                        }
-                    }
-                }
-
-                            #errorMail {
-                                font-weight: bold;
-                                padding-right: 125px;
-                                padding-bottom: 6px;
-                                color: $bleu;
-                            }
-                        }
-                    }
-                }
-
-                .text {
-                    padding-top: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    @media screen and(max-width: 992px) {
-                        display: none;
-                    }
-
-                    p {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 14px;
-                        color: white;
-                    }
-
-                    ul {
-                        list-style-type: none;
-                        margin-bottom: 0;
-
-                        li {
-                            font-family: 'Segoe UI';
-                            font-size: 14px;
-                            color: white;
-                        }
-                    }
-                }
-            }
-
-            .row {
-                .form {
-                    .message {
-                        label {
-                            font-family: 'Segoe UI Bold';
-                            font-size: 14px;
-                            color: white;
-                        }
-
-                        #message {
-                .text {
-                    padding-top: 25px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    @media screen and(max-width: 992px) {
-                        display: none;
-                    }
-
-                    p {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 14px;
-                        color: white;
-                    }
-
-                    ul {
-                        list-style-type: none;
-                        margin-bottom: 0;
-
-                        li {
-                            font-family: 'Segoe UI';
-                            font-size: 14px;
-                            color: white;
-                        }
-                    }
-                }
-            }
-
-            .row {
-                .form {
-                    .message {
-                        label {
-                            font-family: 'Segoe UI Bold';
-                            font-size: 14px;
-                            color: white;
-                        }
-
-                        #message {
-                            height: 220px;
-                            display: block;
-                            width: 100%;
-                            border-radius: 0;
-                            background-color: transparent;
-                            background-clip: padding-box;
-                            border: 2px solid white;
-                            color: white;
-                        }
-
-                        #errorMessage {
-                            font-weight: bold;
-                            padding-right: 125px;
-                            padding-bottom: 6px;
-                            color: $bleu;
-                        }
-                    }
-                }
-            }
-
-            .row {
-                .submit {
-                    button {
-                        width: 100%;
-                        height: 60px;
-                        border-radius: inherit;
-                        color: white;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
-                        user-select: none;
-                        background-color: $bleu;
-                        font-family: 'Segoe UI Bold';
-                        font-size: 14px;
-                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-                    }
-
-                    button:hover {
-                        background-color: rgb(84, 141, 247);
-                    }
-                }
-            }
-        }   
-
-    }
-     /* correction form */
-
-     .msg-error {
-        display: none;
-        color: red;
-        margin-left: 15px;
-        font-size: .85rem;
-
-        span {
-            display: inline-block;
-            background-color: red;
-            color: white;
-            padding: 5px 8px;
-        }
-    }
-    .msg-error--show{
-        display:inline-block;
-    }
-        }
-    }
-}
-
-/* *************** FOOTER ****************** */
-footer {
-    height: 170px;
-    background-color: $grisFonce;
-
-    .menu {
-        padding: 80px 0;
-
-        .container {
-            .row {
-                @media screen and(max-width: 768px) {
-                    justify-content: center;
-                    padding-left: 50px;
-                }
-
-                .menu_footer {
-                    padding-right: 0px;
-                    padding-left: 0px;
-
-                    ul {
-                        list-style-type: none;
-                        display: flex;
-                        justify-content: space-between;
-
-
-                        .home {
-                            padding-left: 0;
-                        }
-
-                        li {
-                            font-family: 'Segoe UI Semibold';
-                            font-size: 12px;
-                            color: $gris;
-                            border-right: 1px #515f67 solid;
-                            height: 5px;
-                            padding-right: 20px;
-                            padding-left: 20px;
-                            padding-bottom: 19px;
-
-                .menu_footer {
-                    padding-right: 0px;
-                    padding-left: 0px;
-
-                    ul {
-                        list-style-type: none;
-                        display: flex;
-                        justify-content: space-between;
-
-
-                        .home {
-                            padding-left: 0;
-                        }
-
-                        li {
-                            font-family: 'Segoe UI Semibold';
-                            font-size: 12px;
-                            color: $gris;
-                            border-right: 1px #515f67 solid;
-                            height: 5px;
-                            padding-right: 20px;
-                            padding-left: 20px;
-                            padding-bottom: 19px;
-
-                            @media screen and(max-width: 768px) {
-                                font-size: 7px;
-                            }
-
-                            a {
-                                text-decoration: none;
-                            }
-
-                            a:hover {
-                                color: rgb(27, 27, 27);
-                            }
-                        }
-
-                        .contact {
-                            padding-right: 0;
-                            border-right: none;
-                        }
-                    }
-                }
-
-                .annee {
-                    padding-right: 0px;
-                    display: flex;
-                    justify-content: flex-end;
-
+            .container {
+                .row {
                     @media screen and(max-width: 768px) {
-                        display: none;
-                        justify-content: flex-start;
+                        justify-content: center;
+                        padding-left: 50px;
                     }
 
-                    p {
-                        font-family: 'Segoe UI Semibold';
-                        font-size: 12px;
-                        color: $gris;
+                    .menu_footer {
+                        padding-right: 0px;
+                        padding-left: 0px;
 
+                        ul {
+                            list-style-type: none;
+                            display: flex;
+                            justify-content: space-between;
+
+                            li {
+                                font-family: 'Segoe UI Semibold';
+                                font-size: 12px;
+                                color: $gris;
+                                border-right: 1px #515f67 solid;
+                                height: 5px;
+                                padding-right: 20px;
+                                padding-left: 20px;
+                                padding-bottom: 19px;
+
+                                .home {
+                                    padding-left: 0;
+                                }
+
+                                @media screen and(max-width: 768px) {
+                                    font-size: 7px;
+                                }
+
+                                a {
+                                    text-decoration: none;
+                                }
+
+                                a:hover {
+                                    color: rgb(27, 27, 27);
+                                }
+
+
+                                .contact {
+                                    padding-right: 0;
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .annee {
+                        padding-right: 0px;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        @media screen and(max-width: 768px) {
+                            display: none;
+                            justify-content: flex-start;
+                        }
+
+                        p {
+                            font-family: 'Segoe UI Semibold';
+                            font-size: 12px;
+                            color: $gris;
+
+                        }
                     }
                 }
             }
         }
     }
 }
-
-
-
-// END

@@ -1,18 +1,16 @@
 /* ***************** Système de filtres sur images ***********************
  **********************     Section PORTFOLIO     *********************** */
 
-window.onload=function(){
+// window.onload=function(){
 /* ******************* VARIABLES ******************** */
 
+var portfolio_all = document.querySelector("#linkAll");
 var portfolio_panoramas = document.querySelector("#linkPanoramas");
 var portfolio_portraits = document.querySelector("#linkPortraits");
 var portfolio_macro = document.querySelector("#linkMacro");
 var portfolio_journal = document.querySelector("#linkJournal");
-var portfolio_all = document.querySelector("#linkAll");
-var formulaire = document.getElementById("formEnregistrer");
 
-
-
+// var formulaire = document.getElementById("formEnregistrer");
 
 /* ******************* EVENEMENTS ******************** */
 
@@ -21,108 +19,67 @@ portfolio_portraits.addEventListener("click", clickPortraits);
 portfolio_macro.addEventListener("click", clickMacro);
 portfolio_journal.addEventListener("click", clickJournal);
 portfolio_all.addEventListener("click", clickAll);
-formulaire.addEventListener("submit", verifFullName);
-}
+// formulaire.addEventListener("submit", verifFullName);
+// }
 
 /* ******************* FONCTIONS ******************** */
 
 function clickPanoramas() {
-	document.querySelector("#panoramas").style.display = 'block';
-	document.querySelector("#journal").style.display = 'none';
-	document.querySelector("#macro").style.display = 'none';
-	document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#autoroute").style.display = 'block';
+	document.querySelector("#pont").style.display = 'block';
+	document.querySelector("#rochers").style.display = 'none';
+	document.querySelector("#arbre").style.display = 'none';
+	document.querySelector("#foret").style.display = 'none';
+	document.querySelector("#surfer").style.display = 'none';
+	document.querySelector("#montagne").style.display = 'none';
+	document.querySelector("#neige").style.display = 'none';
 }
 
 function clickPortraits() {
-	document.querySelector("#panoramas").style.display = 'none';
-	document.querySelector("#journal").style.display = 'none';
-	document.querySelector("#macro").style.display = 'none';
-	document.querySelector("#portraits").style.display = 'block';
+	document.querySelector("#autoroute").style.display = 'none';
+	document.querySelector("#pont").style.display = 'none';
+	document.querySelector("#rochers").style.display = 'none';
+	document.querySelector("#arbre").style.display = 'none';
+	document.querySelector("#foret").style.display = 'block';
+	document.querySelector("#surfer").style.display = 'block';
+	document.querySelector("#montagne").style.display = 'none';
+	document.querySelector("#neige").style.display = 'none';
 }
 
 function clickMacro() {
-	document.querySelector("#panoramas").style.display = 'none';
-	document.querySelector("#journal").style.display = 'none';
-	document.querySelector("#macro").style.display = 'block';
-	document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#autoroute").style.display = 'none';
+	document.querySelector("#pont").style.display = 'none';
+	document.querySelector("#rochers").style.display = 'none';
+	document.querySelector("#arbre").style.display = 'none';
+	document.querySelector("#foret").style.display = 'none';
+	document.querySelector("#surfer").style.display = 'none';
+	document.querySelector("#montagne").style.display = 'block';
+	document.querySelector("#neige").style.display = 'block';
 }
 
 function clickJournal() {
-	document.querySelector("#panoramas").style.display = 'none';
-	document.querySelector("#journal").style.display = 'block';
-	document.querySelector("#macro").style.display = 'none';
-	document.querySelector("#portraits").style.display = 'none';
+	document.querySelector("#autoroute").style.display = 'none';
+	document.querySelector("#pont").style.display = 'none';
+	document.querySelector("#rochers").style.display = 'block';
+	document.querySelector("#arbre").style.display = 'block';
+	document.querySelector("#foret").style.display = 'none';
+	document.querySelector("#surfer").style.display = 'none';
+	document.querySelector("#montagne").style.display = 'none';
+	document.querySelector("#neige").style.display = 'none';
 }
 
 function clickAll() {
-	document.querySelector("#panoramas").style.display = 'block';
-	document.querySelector("#journal").style.display = 'block';
-	document.querySelector("#macro").style.display = 'block';
-	document.querySelector("#portraits").style.display = 'block';
+	document.querySelector("#autoroute").style.display = 'block';
+	document.querySelector("#pont").style.display = 'block';
+	document.querySelector("#rochers").style.display = 'block';
+	document.querySelector("#arbre").style.display = 'block';
+	document.querySelector("#foret").style.display = 'block';
+	document.querySelector("#surfer").style.display = 'block';
+	document.querySelector("#montagne").style.display = 'block';
+	document.querySelector("#neige").style.display = 'block';
 }
 
-
-function verifFullName(event) {
-
-	event.preventDefault();
-
-	var error = document.getElementById("errorFormulaire");
-	var fullname = document.getElementById("fullname");
-	var email = document.getElementById("email");
-	var message = document.getElementById("message");
-	var errs = [];
-	
-	if(fullname.value.length  == 0){
-		//alert("Le champ Full name est vide");
-
-		errs.push("Le champ Full name est obligatoire");
-	}
-	else  if (fullname.value.length < 3 || fullname.value.length > 50){
-		//alert("problème largeur");
-		errs.push("Le champ Full name doit etre compris entre 3 et 50 caracteres");
-	}
-	
-	if(email.value.length  == 0){
-		//alert("Le champ email est vide");
-		errs.push("Le champ email est obligatoire");
-	}
-	else  if (email.value.length < 3 || email.value.length > 50){
-		//alert("problème largeur");
-		errs.push("Le champ email doit etre compris entre 3 et 50 caracteres");
-	}
-
-	
-		if(message.value.length  == 0){
-		//alert("Le champ message est vide");
-		errs.push("Le champ message est obligatoire");
-	}
-	else  if (message.value.length < 3 || message.value.length > 250){
-		//alert("problème largeur");
-		errs.push("Le champ message doit etre compris entre 3 et 250 caracteres");
-	}
-  
-	if(errs.length > 0){
-		console.log("erreur");
-		var html = "<div class='alert alert-danger' role='alert'>";
-		html = html + "<ul>";
-		errs.forEach(function(erreur, index, array) {
-			html = html + "<li>" +erreur + "</li>";
-		});
-		
-		html = html + "<ul>";
-		//alert(html);
-		error.innerHTML  = html;
-	
-	}
-	else{
-		error.innerHTML = "Ok";
-	
-	}
-	
-	
-  
-}
-
+/*
 	e.preventDefault(); //bloque l'envoi du formulaire
 
 	var valeurFullname = fullname.value; //valeur du champ fullname	
@@ -203,6 +160,7 @@ function verifFullName(event) {
 	};
 	verifMessage();
 
+
 	if (verifFullname() && verifMail() && verifMessage() == true ){		
 		confirm("Do you confirm sending your message?");
 		return true;
@@ -220,10 +178,10 @@ function verifFullName(event) {
 		} else {
 			alert("Le formulaire n'a pas pu être envoyé !");
 		}
-		*/
-/*
+		
+
 });
-*/
+
 
 
 /* ****************************   FORMULAIRE   ****************************** 
@@ -290,42 +248,3 @@ window.onload=function(){
 		}  
 	}
 */
-
-/* Correction Formulaire */
-
-form = document.querySelector('form');
-
-form.addEventListener('submit', function () {
-	elements = form.elements; //sélectionne tous les éléments de formulaire y compris le button
-
-	for (let item of elements) { //Pour chaque élèment j'ajoute l'évènement :
-		if (!item.validity.valid) { //Si l'élèment n'est pas valide
-			item.classList.add('error');
-			spanMsg = document.querySelector('label[for="' + item.getAttribute('id') + '"] span.msg-error');
-			spanMsg.classList.add('msg-error--show');
-			event.preventDefault();
-		}
-	}
-});
-
-elements = form.elements; //sélectionne tous les éléments de formulaire y compris le button
-
-for (let item of elements) { //Pour chaque élèment j'ajoute l'évènement :
-	item.addEventListener('blur', function () {
-
-		this.classList.remove('error');
-		spanMsg = document.querySelector('label[for="' + this.getAttribute('id') + '"] span.msg-error');
-		spanMsg.classList.remove('msg-error--show');
-
-		if (!this.validity.valid) { //Si l'élèment n'est pas valide
-			this.classList.add('error');
-			spanMsg.classList.add('msg-error--show');
-		}
-
-	});
-}
-
-
-
-
-
