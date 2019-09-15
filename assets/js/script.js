@@ -1,85 +1,93 @@
 /* ***************** Système de filtres sur images ***********************
  **********************     Section PORTFOLIO     *********************** */
 
-// window.onload=function(){
-/* ******************* VARIABLES ******************** */
+btnAll = document.querySelector('#linkAll');
+btnPano = document.querySelector('#linkPanoramas');
+btnPort = document.querySelector('#linkPortraits');
+btnMacro = document.querySelector('#linkMacro');
+btnJourn = document.querySelector('#linkJournal');
 
-var portfolio_all = document.querySelector("#linkAll");
-var portfolio_panoramas = document.querySelector("#linkPanoramas");
-var portfolio_portraits = document.querySelector("#linkPortraits");
-var portfolio_macro = document.querySelector("#linkMacro");
-var portfolio_journal = document.querySelector("#linkJournal");
 
-// var formulaire = document.getElementById("formEnregistrer");
+btnAll.addEventListener('click', function () {
+	filterSelection('all');
+});
 
-/* ******************* EVENEMENTS ******************** */
+btnPano.addEventListener('click', function () {
+	filterSelection('panoramas');
+});
 
-portfolio_panoramas.addEventListener("click", clickPanoramas);
-portfolio_portraits.addEventListener("click", clickPortraits);
-portfolio_macro.addEventListener("click", clickMacro);
-portfolio_journal.addEventListener("click", clickJournal);
-portfolio_all.addEventListener("click", clickAll);
-// formulaire.addEventListener("submit", verifFullName);
-// }
+btnPort.addEventListener('click', function () {
+	filterSelection('portraits');
+});
 
-/* ******************* FONCTIONS ******************** */
+btnMacro.addEventListener('click', function () {
+	filterSelection('macro');
+});
 
-function clickPanoramas() {
-	document.querySelector("#autoroute").style.display = 'block';
-	document.querySelector("#pont").style.display = 'block';
-	document.querySelector("#rochers").style.display = 'none';
-	document.querySelector("#arbre").style.display = 'none';
-	document.querySelector("#foret").style.display = 'none';
-	document.querySelector("#surfer").style.display = 'none';
-	document.querySelector("#montagne").style.display = 'none';
-	document.querySelector("#neige").style.display = 'none';
+btnJourn.addEventListener('click', function () {
+	filterSelection('journal');
+});
+
+filterSelection("all") // Execute la fonction et affiche tous les .column
+function filterSelection(c) {
+	var x, i;
+	x = document.getElementsByClassName("column");
+	if (c == "all") c = "";
+	// Ajoute la class "show" (display: block) aux élèments filtrés et supprim la class "show" des élèments non sélectionnés
+	for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	}
 }
 
-function clickPortraits() {
-	document.querySelector("#autoroute").style.display = 'none';
-	document.querySelector("#pont").style.display = 'none';
-	document.querySelector("#rochers").style.display = 'none';
-	document.querySelector("#arbre").style.display = 'none';
-	document.querySelector("#foret").style.display = 'block';
-	document.querySelector("#surfer").style.display = 'block';
-	document.querySelector("#montagne").style.display = 'none';
-	document.querySelector("#neige").style.display = 'none';
+// Affiche les élèments filtrés
+function w3AddClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {
+			element.className += " " + arr2[i];
+		}
+	}
 }
 
-function clickMacro() {
-	document.querySelector("#autoroute").style.display = 'none';
-	document.querySelector("#pont").style.display = 'none';
-	document.querySelector("#rochers").style.display = 'none';
-	document.querySelector("#arbre").style.display = 'none';
-	document.querySelector("#foret").style.display = 'none';
-	document.querySelector("#surfer").style.display = 'none';
-	document.querySelector("#montagne").style.display = 'block';
-	document.querySelector("#neige").style.display = 'block';
+// Masque les élèments non sélectionnés
+function w3RemoveClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);
+		}
+	}
+	element.className = arr1.join(" ");
 }
 
-function clickJournal() {
-	document.querySelector("#autoroute").style.display = 'none';
-	document.querySelector("#pont").style.display = 'none';
-	document.querySelector("#rochers").style.display = 'block';
-	document.querySelector("#arbre").style.display = 'block';
-	document.querySelector("#foret").style.display = 'none';
-	document.querySelector("#surfer").style.display = 'none';
-	document.querySelector("#montagne").style.display = 'none';
-	document.querySelector("#neige").style.display = 'none';
+// Ajoute une classe active au click du bouton
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function () {
+		var current = document.getElementsByClassName("btnactive");
+		current[0].className = current[0].className.replace(" btnactive", "");
+		this.className += " btnactive";
+	});
 }
 
-function clickAll() {
-	document.querySelector("#autoroute").style.display = 'block';
-	document.querySelector("#pont").style.display = 'block';
-	document.querySelector("#rochers").style.display = 'block';
-	document.querySelector("#arbre").style.display = 'block';
-	document.querySelector("#foret").style.display = 'block';
-	document.querySelector("#surfer").style.display = 'block';
-	document.querySelector("#montagne").style.display = 'block';
-	document.querySelector("#neige").style.display = 'block';
-}
 
-/*
+/* *************************** FORMULAIRE ********************************* */
+
+var fullname = document.querySelector("#fullname");
+var mail = document.querySelector("#email");
+console.log(email);
+var message = document.querySelector("#message");
+console.log(message);
+var formulaire = document.querySelector("form");
+console.log(formulaire);
+
+formulaire.addEventListener("submit", function (e) {
 	e.preventDefault(); //bloque l'envoi du formulaire
 
 	var valeurFullname = fullname.value; //valeur du champ fullname	
@@ -178,6 +186,7 @@ function clickAll() {
 		} else {
 			alert("Le formulaire n'a pas pu être envoyé !");
 		}
+		*/
 		
 
 });

@@ -1,5 +1,5 @@
 /* ****** IMPORT POLICES ****** */
-@import "https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css";
+@import url("https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css");
 /* ****** VARIABLES COLOR ****** */
 /* ****** GENERAL ****** */
 * {
@@ -17,6 +17,7 @@ body {
   /* *************** MAIN ****************** */
   /* *************** FOOTER ****************** */
 }
+
 body #hero {
   width: 100%;
   height: 800px;
@@ -25,89 +26,116 @@ body #hero {
   /* *** Barre de navigation *** */
   /* *** Section HERO *** */
 }
+
 body #hero #navbar {
   height: 150px;
   background-color: rgba(62, 73, 80, 0.8);
 }
+
 body #hero #navbar #logo {
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   color: white;
   font-weight: bold;
   font-size: 30px;
 }
+
 body #hero #navbar #logo span {
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   color: #4bcaff;
 }
+
 body #hero #navbar #navbarNav {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 14px;
 }
+
 body #hero #navbar #navbarNav ul li {
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   padding-left: 27px;
 }
+
+body #hero #navbar #navbarNav ul li .home {
+  border: 2px #4bcaff solid;
+  color: #4bcaff;
+}
+
 body #hero #navbar #navbarNav a {
   color: white;
   border: 2px transparent solid;
 }
+
 body #hero #navbar #navbarNav a:hover {
   color: #4bcaff;
   border: 2px #4bcaff solid;
+  -webkit-transition: border 0.5s;
   transition: border 0.5s;
 }
+
 @media screen and (max-width: 768px) {
   body #hero #navbar #navbarNav a:hover {
     border: none;
   }
 }
+
 body #hero #section_hero #title {
   text-align: center;
   padding-top: 250px;
 }
+
 @media screen and (max-width: 768px) {
   body #hero #section_hero #title {
     padding-top: 200px;
   }
 }
+
 body #hero #section_hero #title .haut {
   padding: 0% 22% 0% 22%;
 }
+
 @media screen and (max-width: 768px) {
   body #hero #section_hero #title .haut {
     padding: 0;
   }
 }
+
 body #hero #section_hero #title .haut h1 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   color: white;
   background-color: rgba(62, 73, 80, 0.8);
   padding: 1% 0% 1% 0%;
   letter-spacing: -1px;
 }
+
 body #hero #section_hero #title .haut h1 span {
   font-style: italic;
   padding-right: 7px;
 }
+
 body #hero #section_hero #title .bas {
   padding: 0% 10% 0% 10%;
 }
+
 @media screen and (max-width: 768px) {
   body #hero #section_hero #title .bas {
     padding: 0;
   }
 }
+
 body #hero #section_hero #title .bas h1 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   color: white;
   background-color: rgba(62, 73, 80, 0.8);
   padding: 1% 0% 1% 0%;
   letter-spacing: -1px;
 }
+
 body #hero #section_hero #title .bas h1 span {
   font-style: italic;
   padding-right: 7px;
 }
+
 body main {
   /* *** Section SERVICES *** */
   /* *** Section PORTFOLIO *** */
@@ -117,149 +145,181 @@ body main {
   /* *** Section TESTIMONIALS *** */
   /* *** Section CONTACT *** */
 }
+
 body main #services {
   background-color: #4bcaff;
   color: white;
 }
+
 body main #services .container {
   padding: 80px 0;
 }
+
 body main #services .container .row .titre_serv h2 {
   color: white;
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   font-weight: lighter;
   font-size: 30px;
 }
+
 body main #services .container .row .titre_serv .bordure {
   border-top: 3px white solid;
   width: 45px;
   margin-top: -5px;
 }
+
 body main #services .container .row img {
   margin: 30px 0 20px 0;
 }
+
 body main #services .container .row h3 {
-  font-family: "Segoe UI Semibold";
+  font-family: 'Segoe UI Semibold';
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 5px;
 }
+
 body main #services .container .row p {
-  font-family: "Segoe UI Semibold";
+  font-family: 'Segoe UI Semibold';
   font-size: 12px;
 }
-body main .portfolio {
-  width: 100%;
-  padding: 80px 0;
+
+body main #portfolio {
+  background-color: #ffffff;
+  padding: 70px 0px;
   /* hover + */
 }
-body main .portfolio .container .titre {
-  padding: 0 0 80px 0;
+
+body main #portfolio .topsection {
+  margin-bottom: 35px;
 }
-body main .portfolio .container .titre .titre_menu h2 {
+
+body main #portfolio .topsection h2 {
   font-family: "Segoe UI Light";
   color: #515f67;
   font-size: 30px;
 }
-body main .portfolio .container .titre .titre_menu .bordure {
+
+body main #portfolio .topsection .bordure {
   border-top: 3px #515f67 solid;
   width: 45px;
   margin-top: -5px;
 }
-body main .portfolio .container .menu {
-  color: #515f67;
+
+body main #portfolio .topsection .btn {
+  border: solid 2px transparent;
+  padding: 6px 16px;
   font-size: 14px;
-  padding-right: 0;
-  padding-top: 5px;
-}
-body main .portfolio .container .menu ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-body main .portfolio .container .menu li {
-  font-family: "Segoe UI Bold";
-  padding: 3px 16px;
-  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
   color: #515f67;
-  border: 2px transparent solid;
+  font-family: "Segoe UI Bold";
+  outline: none;
+  border-radius: 0px;
 }
-body main .portfolio .container .menu li:hover {
-  border: 2px #4bcaff solid;
+
+body main #portfolio .topsection .btn:hover {
+  border: solid 2px #4bcaff;
   color: #4bcaff;
+  -webkit-transition: border 0.5s;
   transition: border 0.5s;
 }
-body main .portfolio .container .menu #linkAll {
-  border: 2px #4bcaff solid;
-  padding: 3px 16px;
+
+body main #portfolio .topsection .btnactive {
+  border: solid 2px #4bcaff;
   color: #4bcaff;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
 }
-body main .portfolio #portfolio .container .row {
-  display: flex;
-  justify-content: center;
+
+body main #portfolio .picture {
+  display: none;
+  padding: 10px !important;
 }
-body main .portfolio #portfolio .container .row .images {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+body main #portfolio .picture .bg-image {
+  background-color: black;
+  background-image: url("../images/hover_gallery.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
 }
-body main .portfolio #portfolio .container .row .images .haut {
-  padding-bottom: 23px;
-}
-body main .portfolio .container-img {
-  position: relative;
-}
-body main .portfolio .container-img_hover {
-  width: 270px;
-  height: 270px;
-  text-align: center;
-  line-height: 270px;
-  color: white;
-  font-size: 4.7rem;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.42);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.8s linear;
-}
-body main .portfolio .container-img:hover .container-img_hover {
+
+body main #portfolio .picture .bg-image .img-portfolio {
+  width: 100%;
   opacity: 1;
-  transition: opacity 0.8s linear;
+  -webkit-transition: opacity .500s linear;
+  transition: opacity .500s linear;
+}
+
+body main #portfolio .picture .bg-image .img-portfolio:hover {
+  opacity: 0.3;
+  -webkit-transition: opacity .500s linear;
+  transition: opacity .500s linear;
   cursor: pointer;
 }
+
+body main #portfolio .show {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  body main #portfolio .topsection #myBtnContainer {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 body main #section {
   background-color: #515f67;
 }
+
 @media screen and (max-width: 1200px) {
   body main #section {
     display: none;
   }
 }
+
 body main #section .container .row .titre {
   padding: 75px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 body main #section .container .row .titre h2 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   font-size: 30px;
   color: white;
   font-weight: lighter;
 }
+
 body main #section .container .row .titre .bordure {
   width: 45px;
   border-top: 3px white solid;
   margin-top: -25px;
 }
+
 body main #section .container .row .titre p {
-  font-family: "Segoe UI";
+  font-family: 'Segoe UI';
   color: white;
   font-size: 14px;
   padding-right: 16%;
 }
+
 body main #section .container .row .titre button {
   margin-left: 0%;
   margin-right: 76%;
@@ -275,256 +335,328 @@ body main #section .container .row .titre button {
   user-select: none;
   border: 2px solid #353f46;
   padding: 0.375rem 0.75rem;
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
   line-height: 1.5;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
+
 @media screen and (max-width: 992px) {
   body main #section .container .row .titre button {
     margin: 0 40%;
   }
 }
+
 body main #section .container .row .video {
   max-width: 560px;
   padding: 80px 0;
 }
+
 @media screen and (max-width: 1200px) {
   body main #section .container .row .video {
     display: none;
   }
 }
+
 body main #twitter {
   background-color: #4bcaff;
 }
+
 body main #twitter .container {
   padding: 75px 0;
 }
+
 body main #twitter .container .titre .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 body main #twitter .container .titre .icon h2 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   font-size: 30px;
   color: white;
 }
+
 body main #twitter .container .titre .icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
+
 body main #twitter .container .titre .icon a :hover {
   color: #515f67;
 }
+
 body main #twitter .container .titre .icon a i {
   color: white;
 }
+
 body main #twitter .container .row .bordure {
   border-top: 3px white solid;
   width: 45px;
   margin-top: -5px;
   margin-left: 15px;
 }
+
 body main #twitter .container .text {
   padding-left: 14px;
   padding-top: 25px;
 }
+
 body main #twitter .container .text p {
   font-size: 28px;
   color: white;
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
 }
+
 body main #twitter .container .text span {
   font-size: 28px;
   color: white;
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
 }
+
 body main #who_is {
   width: 100%;
   background: url("../images/background_photographe.jpg") no-repeat fixed;
   background-size: cover;
   background-position: center;
 }
+
 body main #who_is .container {
   padding: 100px 0 170px 0;
 }
+
 body main #who_is .container .row .titre {
   margin-bottom: 0;
 }
+
 body main #who_is .container .row .titre h2 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   font-size: 30px;
   color: white;
 }
+
 body main #who_is .container .row .titre .bordure {
   border-top: 3px white solid;
   width: 45px;
 }
+
 body main #who_is .container .text_icons {
   padding-top: 30px;
 }
+
 @media screen and (max-width: 768px) {
   body main #who_is .container .text_icons .text {
     text-align: center;
   }
 }
+
 body main #who_is .container .text_icons .text p {
   font-size: 14px;
   color: white;
 }
+
 body main #who_is .container .text_icons .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 body main #who_is .container .text_icons .icons p {
   font-size: 14px;
   color: white;
 }
+
 @media screen and (max-width: 768px) {
   body main #who_is .container .text_icons .icons p {
     text-align: center;
   }
 }
+
 body main #who_is .container ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 @media screen and (max-width: 768px) {
   body main #who_is .container ul {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 body main #who_is .container ul li {
   margin-right: 2%;
 }
+
 body main #who_is .container ul li button {
   border: 2px white solid;
   background-color: transparent;
   border-radius: inherit;
   border-color: white;
 }
+
 body main #who_is .container ul li button i {
   color: white;
 }
+
 body main #who_is .container ul li button .twitter:hover {
   color: #4bcaff;
 }
+
 body main #who_is .container ul li button .google:hover {
   color: red;
 }
+
 body main #who_is .container ul li button .dribbble:hover {
   color: #b32940;
 }
+
 body main #who_is .container ul li button .coffee:hover {
   color: black;
 }
+
 body main #who_is .container ul li button:hover {
   background-color: #515f67;
 }
+
 body main #testimonials .container {
   padding: 80px 0;
 }
+
 body main #testimonials .container .row .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 body main #testimonials .container .row .titre h2 {
   color: #515f67;
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   font-size: 30px;
 }
+
 body main #testimonials .container .row .titre .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 body main #testimonials .container .row {
   margin-right: 0 !important;
 }
+
 body main #testimonials .container .row .bordure {
   width: 45px;
   border-top: 2px #353f46 solid;
   margin-left: 15px;
   margin-top: -3px;
 }
+
 body main #testimonials .container .row .text {
   padding-top: 25px;
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   color: #515f67;
   font-size: 28px;
 }
+
 body main #testimonials .container .row .author p {
   padding-top: 10px;
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
   color: #4bcaff;
 }
-body main #errorFormulaire {
-  color: red;
-}
+
 body main #contact {
   width: 100%;
   background: url("../images/background_contact.jpg") no-repeat fixed;
   background-size: cover;
 }
+
 body main #contact .container {
   padding: 80px 0;
 }
+
 body main #contact .container .row .titre {
   margin-bottom: 0;
 }
+
 body main #contact .container .row .titre h2 {
-  font-family: "Segoe UI Light";
+  font-family: 'Segoe UI Light';
   color: white;
   font-size: 30px;
 }
-body main #contact .container .row .titre #errorFormulaire {
-  color: red;
-}
-body main #contact .container .row .titre #contact {
-  width: 100%;
-  background: url("../images/background_contact.jpg") no-repeat fixed;
-  background-size: cover;
-}
-body main #contact .container .row .titre #contact .container {
-  padding: 80px 0;
-}
-body main #contact .container .row .titre #contact .container .row .titre {
-  margin-bottom: 0;
-}
-body main #contact .container .row .titre #contact .container .row .titre h2 {
-  font-family: "Segoe UI Light";
-  color: white;
-  font-size: 30px;
-}
-body main #contact .container .row .titre #contact .container .row .titre .bordure {
+
+body main #contact .container .row .titre .bordure {
   border-bottom: 2px white solid;
   width: 45px;
 }
-body main #contact .container .row .titre #contact .container .row {
+
+body main #contact .container form .row {
   padding-top: 30px;
 }
+
 @media screen and (max-width: 992px) {
-  body main #contact .container .row .titre #contact .container .row {
+  body main #contact .container form .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 @media screen and (max-width: 992px) {
-  body main #contact .container .row .titre #contact .container .row .form {
+  body main #contact .container form .row .form {
     width: 100%;
   }
 }
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname label {
-  font-family: "Segoe UI Bold";
+
+body main #contact .container form .row .form .fullname label {
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #fullname {
+
+body main #contact .container form .row .form .fullname #fullname {
   height: 60px;
   display: block;
   width: 100%;
@@ -534,27 +666,21 @@ body main #contact .container .row .titre #contact .container .row .form #formEn
   border: 2px solid white;
   color: white;
 }
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #errorFullname {
+
+body main #contact .container form .row .form .fullname #errorFullname {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname #errorFullname #fullname {
-  height: 60px;
-  display: block;
-  width: 100%;
-  border-radius: 0;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: 2px solid white;
-}
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname .email label {
-  font-family: "Segoe UI Bold";
+
+body main #contact .container form .row .form .email label {
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .titre #contact .container .row .form #formEnregistrer .fullname .email #email {
+
+body main #contact .container form .row .form .email #email {
   height: 60px;
   display: block;
   width: 100%;
@@ -564,73 +690,60 @@ body main #contact .container .row .titre #contact .container .row .form #formEn
   border: 2px solid white;
   color: white;
 }
-body main #contact .container .row .titre #contact .container .row .form #errorMail {
+
+body main #contact .container form .row .form .email #email [placeholder] {
+  color: grey;
+}
+
+body main #contact .container form .row .form .email #errorMail {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-body main #contact .container .row .titre #contact .text {
+
+body main #contact .container form .row .text {
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media screen and (max-width: 992px) {
-  body main #contact .container .row .titre #contact .text {
+  body main #contact .container form .row .text {
     display: none;
   }
 }
-body main #contact .container .row .titre #contact .text p {
-  font-family: "Segoe UI Semibold";
+
+body main #contact .container form .row .text p {
+  font-family: 'Segoe UI Semibold';
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .titre #contact .text ul {
+
+body main #contact .container form .row .text ul {
   list-style-type: none;
   margin-bottom: 0;
+  padding-top: 45px;
 }
-body main #contact .container .row .titre #contact .text ul li {
-  font-family: "Segoe UI";
+
+body main #contact .container form .row .text ul li {
+  font-family: 'Segoe UI';
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .titre .row .form .message label {
-  font-family: "Segoe UI Bold";
+
+body main #contact .container form .row .form .message label {
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
   color: white;
 }
-body main #contact .container .row .titre .row .form .message #message .text {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media screen and (max-width: 992px) {
-  body main #contact .container .row .titre .row .form .message #message .text {
-    display: none;
-  }
-}
-body main #contact .container .row .titre .row .form .message #message .text p {
-  font-family: "Segoe UI Semibold";
-  font-size: 14px;
-  color: white;
-}
-body main #contact .container .row .titre .row .form .message #message .text ul {
-  list-style-type: none;
-  margin-bottom: 0;
-}
-body main #contact .container .row .titre .row .form .message #message .text ul li {
-  font-family: "Segoe UI";
-  font-size: 14px;
-  color: white;
-}
-body main #contact .container .row .titre .row .form .message .row .form .message label {
-  font-family: "Segoe UI Bold";
-  font-size: 14px;
-  color: white;
-}
-body main #contact .container .row .titre .row .form .message .row .form .message #message {
+
+body main #contact .container form .row .form .message #message {
   height: 220px;
   display: block;
   width: 100%;
@@ -640,13 +753,15 @@ body main #contact .container .row .titre .row .form .message .row .form .messag
   border: 2px solid white;
   color: white;
 }
-body main #contact .container .row .titre .row .form .message .row .form .message #errorMessage {
+
+body main #contact .container form .row .form .message #errorMessage {
   font-weight: bold;
   padding-right: 125px;
   padding-bottom: 6px;
   color: #4bcaff;
 }
-body main #contact .container .row .titre .row .form .message .row .submit button {
+
+body main #contact .container form .row .submit button {
   width: 100%;
   height: 60px;
   border-radius: inherit;
@@ -656,37 +771,52 @@ body main #contact .container .row .titre .row .form .message .row .submit butto
   -ms-user-select: none;
   user-select: none;
   background-color: #4bcaff;
-  font-family: "Segoe UI Bold";
+  font-family: 'Segoe UI Bold';
   font-size: 14px;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-body main #contact .container .row .titre .row .form .message .row .submit button:hover {
+
+body main #contact .container form .row .submit button:hover {
   background-color: #548df7;
 }
+
 body footer {
-  height: 170px;
   background-color: #353f46;
 }
+
 body footer .menu {
   padding: 80px 0;
 }
+
 @media screen and (max-width: 768px) {
   body footer .menu .container .row {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 50px;
   }
 }
+
 body footer .menu .container .row .menu_footer {
   padding-right: 0px;
   padding-left: 0px;
 }
+
 body footer .menu .container .row .menu_footer ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 body footer .menu .container .row .menu_footer ul li {
-  font-family: "Segoe UI Semibold";
+  font-family: 'Segoe UI Semibold';
   font-size: 12px;
   color: #515f67;
   border-right: 1px #515f67 solid;
@@ -695,39 +825,52 @@ body footer .menu .container .row .menu_footer ul li {
   padding-left: 20px;
   padding-bottom: 19px;
 }
+
 body footer .menu .container .row .menu_footer ul li .home {
   padding-left: 0;
 }
+
 @media screen and (max-width: 768px) {
   body footer .menu .container .row .menu_footer ul li {
     font-size: 7px;
   }
 }
+
 body footer .menu .container .row .menu_footer ul li a {
   text-decoration: none;
 }
+
 body footer .menu .container .row .menu_footer ul li a:hover {
   color: #1b1b1b;
 }
+
 body footer .menu .container .row .menu_footer ul li .contact {
   padding-right: 0;
   border-right: none;
 }
+
 body footer .menu .container .row .annee {
   padding-right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 @media screen and (max-width: 768px) {
   body footer .menu .container .row .annee {
     display: none;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
+
 body footer .menu .container .row .annee p {
-  font-family: "Segoe UI Semibold";
+  font-family: 'Segoe UI Semibold';
   font-size: 12px;
   color: #515f67;
 }
-
 /*# sourceMappingURL=style.css.map */

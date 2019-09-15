@@ -56,13 +56,13 @@
                 <div id="navbarNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="h nav-link" href="#hero">HOME</a>
+                            <a class="home nav-link" href="#hero">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
+                            <a class="nav-link" href="#section">FEATURES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#navbar_portfolio">PORTFOLIO</a>
@@ -101,25 +101,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="services col-sm-12 col-md-6 col-lg-3">
                         <img src="assets/images/logo_coffee.png" width="34" height="48" alt="logo coffee blanc">
                         <h3>COFFEE</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="services col-sm-12 col-md-6 col-lg-3">
                         <img src="assets/images/logo_instant.png" width="48" height="48" alt="logo instant blanc">
                         <h3>INSTANT</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="services col-sm-12 col-md-6 col-lg-3">
                         <img src="assets/images/logo_serious.png" width="47" height="45" alt="logo serious blanc">
                         <h3>SERIOUS</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
                             Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="services col-sm-12 col-md-6 col-lg-3">
                         <img src="assets/images/logo_frame.png" width="48" height="48" alt="logo frame blanc">
                         <h3>FRAME</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
@@ -130,7 +130,7 @@
         </section>
 
         <!-- Section PORTFOLIO -->
-        <section class="portfolio">
+        <!--<section class="portfolio" id="navbar_portfolio">
             <div class="container-fluid">
                 <div class="container">
                     <div class="titre row">
@@ -138,72 +138,80 @@
                             <h2>PORTFOLIO</h2>
                             <div class="bordure"></div>
                         </div>
-                        <div class="menu col-6">
-                            <ul>
-                                <li id="linkAll">ALL</li>
-                                <li id="linkPanoramas">PANORAMAS</li>
-                                <li id="linkPortraits">PORTRAITS</li>
-                                <li id="linkMacro">MACRO</li>
-                                <li id="linkJournal">JOURNAL</li>
-                            </ul>
                         </div>
-                    </div>
+
+                        <ul class="menu col-6" id="myBtnContainer">
+                            <li class="btn btnactive" id="linkAll">ALL</li>
+                            <li class="btn" id="linkPanoramas">PANORAMAS</li>
+                            <li class="btn" id="linkPortraits">PORTRAITS</li>
+                            <li class="btn" id="linkMacro">MACRO</li>
+                            <li class="btn" id="linkJournal">JOURNAL</li>
+                        </ul>
+                        <div class="menu col-6" id="myBtnContainer">
+                            <button class="btn btnactive" id="linkAll"> ALL</button>
+                            <button class="btn" id="linkPanoramas"> PANORAMAS</button>
+                            <button class="btn" id="linkPortraits"> PORTRAITS</button>
+                            <button class="btn" id="linkMacro"> MACRO</button>
+                            <button class="btn" id="linkJournal"> JOURNAL</button>
+                        </div>
+
+                    
                 </div>
             </div>
             <div id="portfolio" class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="images col-12">
-                            <div class="haut container-img">
+                        <div class="images col-12 col-md-12 col-lg-12">
+                            <div class="picture haut column container-img">
                                 <img id="autoroute" src="assets/images/portfolio_autoroute.jpg" width="270" height="270"
                                     alt="autoroute sur mer/océan en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="haut container-img">
+                            <div class="picture haut column container-img">
                                 <img id="pont" src="assets/images/portfolio_pont.jpg" width="270" height="270"
                                     alt="partie supérieur d'un grand pont dans le brouillard avec ville au loin en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="haut container-img">
+                            <div class="picture haut column container-img">
                                 <img id="rochers" src="assets/images/portfolio_rochers.jpg" width="270" height="270"
                                     alt="rochers dans l'eau avec brume en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="haut container-img">
+                            <div class="picture haut column container-img">
                                 <img id="arbre" src="assets/images/portfolio_arbre.jpg" width="270" height="270"
                                     alt="arbre au loin dans la brume en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="container-img">
+                            <div class="picture bas column container-img">
                                 <img id="foret" src="assets/images/portfolio_foret.jpg" width="270" height="270"
                                     alt="chalet en boir au mileu d'une foret de sapins en noir er blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="container-img">
+                            <div class="picture bas column container-img">
                                 <img id="surfer" src="assets/images/portfolio_surfer.jpg" width="270" height="270"
                                     alt="surfeur devant une énorme vague en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="container-img">
+                            <div class="picture bas column container-img">
                                 <img id="montagne" src="assets/images/portfolio_montagne.jpg" width="270" height="270"
                                     alt="montagnes avec neige éternelle en noir et blanc">
                                 <div class="container-img_hover">
                                     +
                                 </div>
                             </div>
-                            <div class="container-img">
+                            <div class="picture bas column container-img">
                                 <img id="neige" src="assets/images/portfolio_neige.jpg" width="270" height="270"
                                     alt="montagnes avec neige éternelle avec nuages en noir et blanc">
                                 <div class="container-img_hover">
@@ -212,6 +220,106 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="container-fluid" id="portfolio">
+            <div class="container">
+
+                <div class="d-flex justify-content-between flex-column flex-lg-row topsection">
+                    <div class="titledetails">
+                        <h2>PORTFOLIO</h2>
+                        <div class="bordure"></div>
+                    </div>
+
+                    <div id="myBtnContainer">
+                        <button class="btn btnactive" id="linkAll"> ALL</button>
+                        <button class="btn" id="linkPanoramas"> PANORAMAS</button>
+                        <button class="btn" id="linkPortraits"> PORTRAITS</button>
+                        <button class="btn" id="linkMacro"> MACRO</button>
+                        <button class="btn" id="linkJournal"> JOURNAL</button>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 panoramas">
+                        <div class="bg-image">
+                            <a class="imagezoom" href="assets/images/portfolio_autoroute.jpg">
+                                <img class="img-fluid img-portfolio" id="autoroute"
+                                    src="assets/images/portfolio_autoroute.jpg" width="270" height="270"
+                                    alt="autoroute sur mer/océan en noir et blanc">
+                                <!--<div class="container-img_hover">
+                                    +
+                                </div>-->
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 panoramas">
+                        <div class="bg-image">
+                            <a class="imagezoom" href="assets/images/portfolio_pont.jpg">
+                                <img class="img-fluid img-portfolio" id="pont" src="assets/images/portfolio_pont.jpg"
+                                    width="270" height="270" alt="partie supérieur d'un grand pont dans le brouillard avec ville au loin en noir et
+                                blanc">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 portraits">
+                        <div class="bg-image">
+                        <a class="imagezoom" href="assets/images/portfolio_rochers.jpg">
+                            <img class="img-fluid img-portfolio" id="rochers" src="assets/images/portfolio_rochers.jpg"
+                                width="270" height="270" alt="rochers dans l'eau avec brume en noir et blanc">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 portraits">
+                    <div class="bg-image">
+                    <a class="imagezoom" href="assets/images/portfolio_arbre.jpg">
+                        <img class="img-fluid img-portfolio" id="arbre" src="assets/images/portfolio_arbre.jpg"
+                            width="270" height="270" alt="arbre au loin dans la brume en noir et blanc">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 portraits">
+                <div class="bg-image">
+                    <a class="imagezoom" href="assets/images/portfolio_foret.jpg">
+                        <img class="img-fluid img-portfolio" id="foret" src="assets/images/portfolio_foret.jpg"
+                            width="270" height="270"
+                            alt="chalet en boir au mileu d'une foret de sapins en noir er blanc">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 macro">
+                <div class="bg-image">
+                    <a class="imagezoom" href="assets/images/portfolio_surfer.jpg">
+                        <img class="img-fluid img-portfolio" id="surfer" src="assets/images/portfolio_surfer.jpg"
+                            width="270" height="270" alt="surfeur devant une énorme vague en noir et blanc">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 journal">
+                <div class="bg-image">
+                    <a class="imagezoom" href="assets/images/portfolio_montagne.jpg">
+                        <img class="img-fluid img-portfolio" id="montagne" src="assets/images/portfolio_montagne.jpg"
+                            width="270" height="270" alt="montagnes avec neige éternelle en noir et blanc">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-img picture column col-12 col-sm-6 col-md-4 col-lg-3 journal">
+                <div class="bg-image">
+                    <a class="imagezoom" href="assets/images/portfolio_neige.jpg">
+                        <img class="img-fluid img-portfolio" id="neige" src="assets/images/portfolio_neige.jpg"
+                            width="270" height="270" alt="montagnes avec neige éternelle avec nuages en noir et blanc">
+                    </a>
                 </div>
             </div>
         </section>
@@ -326,9 +434,9 @@
             </div>
         </section>
 
-        <!-- Section CONTACT -->
+        <!--Section CONTACT -->
         <!-- <div id="errorFormulaire"></div> -->
-        <!--<section id="contact" class="container-fluid">
+        <section id="contact" class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="titre col-12">
@@ -336,54 +444,52 @@
                         <div class="bordure"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="form col-lg-5">
-                        <form method="post" id="formEnregistrer">
-                            <div class="fullname">
+                <form method="post" id="formEnregistrer">
+                    <div class="row">
+                        <div class="form col-lg-5">
+                            <div class="fullname form-group">
                                 <label for="fullname">FULL NAME</label>
                                 <input type="text" class="form-control" name="fullname" id="fullname">
                                 <span id="errorFullname"></span>
                             </div>
                             <br>
-                            <div class="email">
+                            <div class="email form-group">
                                 <label for="email">EMAIL</label>
                                 <input type="email" class="form-control" name="email" id="email"
                                     placeholder="adresse@example.com">
                                 <span id="errorMail"></span>
                             </div>
-                    </div>
-                    <div class="text offset-lg-1 col-lg-6">
-                        <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop
-                            halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop
-                            tart. Jujubes bear claw donut chupa chups.</p>
-                        <ul>
-                            <li>Linda Newman</li>
-                            <li>W325 State Road 123</li>
-                            <li>Mondovi, WI(Wisconsin) 98746-54321</li>
-                            <li>(715) 946 - 1234</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form col-12">
-                        <div class="message">
-                            <label for="message">MESSAGE</label>
-                            <textarea class="form-control" name="message" id="message" rows="10"></textarea>
-                            <span id="errorMessage"></span>
+                        </div>
+                        <div class="text offset-lg-1 col-lg-6">
+                            <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop
+                                halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop
+                                tart. Jujubes bear claw donut chupa chups.</p>
+                            <ul>
+                                <li>Linda Newman</li>
+                                <li>W325 State Road 123</li>
+                                <li>Mondovi, WI(Wisconsin) 98746-54321</li>
+                                <li>(715) 946 - 1234</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="submit col-4">
-                        <button type="submit" class="btn btn-outline-secondary">MESSAGE</button>
+                    <div class="row">
+                        <div class="form col-12">
+                            <div class="message">
+                                <label for="message">MESSAGE</label>
+                                <textarea class="form-control" name="message" id="message" rows="10"></textarea>
+                                <span id="errorMessage"></span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="submit col-4">
+                            <button type="submit" class="btn btn-outline-secondary">MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            </form>
-        </section>-->
+        </section>
     </main>
-
-
 
     <!-- *************************************************** FOOTER ************************************************************************** -->
     <footer>
@@ -418,6 +524,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <script src="assets/js/script.js"></script>
 </body>
 
